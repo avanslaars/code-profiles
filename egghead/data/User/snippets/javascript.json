@@ -1,0 +1,17 @@
+{
+  "Quokka Comment": {
+    "prefix": "qc",
+    "body": "/*?*/$1",
+    "description": "Special comment for Quokka output"
+  },
+  "Quokka Comment with $ to perform extra eval": {
+    "prefix": "qcev",
+    "body": "/*? $ $1*/$2",
+    "description": "Special comment for Quokka output with $ variable"
+  },
+  "Quokka execution time": {
+    "prefix": "qct",
+    "body": "/*?.*/$1",
+    "description": "Special comment for Quokka to display execution time"
+  }
+}
