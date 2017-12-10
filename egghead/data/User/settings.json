@@ -17,5 +17,8 @@
   "window.zoomLevel": 1,
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line",
-  "editor.minimap.renderCharacters": false
+  "editor.minimap.renderCharacters": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "workbench.panel.location": "bottom"
 }
