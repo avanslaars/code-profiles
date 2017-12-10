@@ -1,0 +1,21 @@
+{
+  "editor.fontFamily": "Operator Mono",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.fontLigatures": false,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.tabCompletion": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "workbench.colorTheme": "Material Operator",
+  "javascript.validate.enable": false,
+  "window.zoomLevel": 1,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.minimap.renderCharacters": false
+}

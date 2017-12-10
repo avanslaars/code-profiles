@@ -1,0 +1,28 @@
+{
+	"name": "theme-material-operator",
+	"displayName": "Material Operator",
+	"description": "A material design theme optimized for the Operator Mono typeface.",
+	"version": "1.3.0",
+	"publisher": "bcmarinacci",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Material Operator",
+				"uiTheme": "vs-dark",
+				"path": "./themes/material-operator.tmTheme"
+			}
+		]
+	},
+	"icon": "assets/material.png",
+	"__metadata": {
+		"id": "d38dc8c9-b64d-480c-bfb7-7f459ff3f464",
+		"publisherId": "c1a5e7c5-a7a3-4207-83cf-915e4ed4e52d",
+		"publisherDisplayName": "Benjamin Marinacci"
+	}
+}

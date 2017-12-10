@@ -1,0 +1,46 @@
+notifications:
+  email: false
+
+sudo: true
+
+os:
+- linux
+
+language: node_js
+
+node_js:
+- 8.9.1
+
+addons:
+  apt:
+    packages:
+      - libsecret-1-dev
+
+before_install:
+- if [ $TRAVIS_OS_NAME == "linux" ]; then
+    export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
+    sh -e /etc/init.d/xvfb start;
+    sleep 3;
+  fi
+
+install:
+- npm install;
+
+script:
+- npm test
+- npm run lint
+
+before_deploy:
+- npm install -g vsce;
+- vsce package;
+
+deploy:
+  provider: releases
+  api_key:
+    secure: xOq7R0y8Hzf1k1P3qcLu1E+RZxJ+oiaGgbI2IO2ZFxZT7jkgQcO4Nx/PtP6Y3XD195wWzpASp0e3eQtHa9kPjsncFa/x2lCZgjfIG88F4YUTgzVmmMYg4unFJNweYye4mxgGbKaitiah9Ee/+CBH4WXJ5ssnEebb/r/OVlaKiDmrCNi2IbsMK7ydWm6BN6QID730ExnU+HgMXoJgKrAaQxNJH6sCRP7kh0inYqVfzuZmOYG0z/wT1izNn+UViSGsqGHjF0BN819opOitnamdb+wG3A9aHV4mOGfUFGPgLQZbIm1b+mR0NUFY4KzdxNeK1WedMZMWYuN7NMwOX/zNU+riGyBcTsRPxA9z3kaXB5RiLTERtKmmO5bDsBQNRdBaBeowWry+DZDmNqXETl6ccGBdpqguLU0a1CAfMwTUgXTyTzRAo1jR+yRfdcVmMzSDrPwcvST9dsrW1SoA+gDeh8aM4S+mXXok/xCUehgpl1HYWLKxvygl3UyNcDQsMpD2b57EDO1zZ291wore4qJKpIy+tzBVPIQ50j9FZP8B22Vx0D8lJRHg2NfF6+od/lN2MXp/PUb55JDaLqJtI6rY9Y9iq1qtzlZsUFDwGnjRDUF7FwKMELw4QGeg/bu3IDzCcQ3QLqR1WlAxVYaFInazJV97O/MgAkdj5ZpQcrUkcvs=
+  file_glob: true
+  file: "*.vsix"
+  skip_cleanup: true
+  on:
+    repo: markvincze/vscode-codeFragments
+    tags: true

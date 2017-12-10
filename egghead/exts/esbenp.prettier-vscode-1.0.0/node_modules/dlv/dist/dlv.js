@@ -1,0 +1,1 @@
+function dlv(l,t,o,d){for(d=0,t=t.split?t.split("."):t;l&&d<t.length;)l=l[t[d++]];return void 0===l?o:l}module.exports=dlv;
