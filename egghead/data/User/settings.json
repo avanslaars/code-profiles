@@ -3,7 +3,6 @@
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.fontLigatures": false,
-  "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -19,6 +18,5 @@
   "editor.cursorStyle": "line",
   "editor.minimap.renderCharacters": false,
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "Operator Mono",
-  "workbench.panel.location": "bottom"
+  "terminal.integrated.fontFamily": "Operator Mono"
 }

@@ -1,8 +1,9 @@
-// Place your key bindings in this file to overwrite the defaults
 [
+  // Place your key bindings in this file to overwrite the defaults
   {
     "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+`",
@@ -12,6 +13,21 @@
   {
     "key": "escape",
     "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+m",
+    "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   }
 ]
