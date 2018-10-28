@@ -1,0 +1,14 @@
+​​​​​[Info]​​​​​ Started Wallaby.js Core v1.0.591
+​​​​​[Info]​​​​​ Wallaby App (realtime reports) is available at: http://localhost:51245
+​​​​​[Info]​​​​​ console.log: PASS ./index.spec.js
+​​​​​[Info]​​​​​ Finished executing 3 affected test(s)
+​​​​​[Info]​​​​​ Wallaby.js stopped
+​​​​​[Info]​​​​​ Started Wallaby.js Core v1.0.591
+​​​​​[Info]​​​​​ Wallaby.js stopped
+​​​​​[Info]​​​​​ Started Wallaby.js Core v1.0.591
+​​​​​[Info]​​​​​ console.log: PASS ./index.spec.js
+​​​​​[Info]​​​​​ Finished executing 3 affected test(s)
+​​​​​[Info]​​​​​ console.log: PASS ./index.spec.js
+​​​​​[Info]​​​​​ console.log: PASS ./index.spec.js
+​​​​​[Info]​​​​​ console.log: PASS ./index.spec.js (8.731s)
+​​​​​[Info]​​​​​ Finished executing 3 affected test(s)

@@ -1,0 +1,305 @@
+{
+	"name": "quokka-vscode",
+	"displayName": "Quokka.js",
+	"description": "Live Scratchpad for JavaScript.",
+	"version": "1.0.156",
+	"publisher": "WallabyJs",
+	"homepage": "http://quokkajs.com",
+	"bugs": {
+		"url": "https://github.com/wallabyjs/quokka/issues"
+	},
+	"repository": {},
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"keywords": [
+		"scraptchpad",
+		"playground",
+		"JavaScript",
+		"TypeScript",
+		"REPL"
+	],
+	"categories": [
+		"Debuggers",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./index",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "quokka.createFile",
+				"title": "Quokka.js: New File"
+			},
+			{
+				"command": "quokka.createJavaScriptFile",
+				"title": "Quokka.js: New JavaScript File"
+			},
+			{
+				"command": "quokka.createTypeScriptFile",
+				"title": "Quokka.js: New TypeScript File"
+			},
+			{
+				"command": "quokka.showOutput",
+				"title": "Quokka.js: Show Output"
+			},
+			{
+				"command": "quokka.showInstrumentedFile",
+				"title": "Quokka.js: Show Instrumented Code"
+			},
+			{
+				"command": "quokka.makeQuokkaFromExistingFile",
+				"title": "Quokka.js: Start on Current File"
+			},
+			{
+				"command": "quokka.runOnSave",
+				"title": "Quokka.js: Run on save for Current File"
+			},
+			{
+				"command": "quokka.runOnce",
+				"title": "Quokka.js: Run once for Current File"
+			},
+			{
+				"command": "quokka.stopCurrent",
+				"title": "Quokka.js: Stop Current"
+			},
+			{
+				"command": "quokka.stopAll",
+				"title": "Quokka.js: Stop All"
+			},
+			{
+				"command": "quokka.installMissingPackageToProject",
+				"title": "Quokka.js: Install Missing Package into Project"
+			},
+			{
+				"command": "quokka.installMissingPackageToQuokka",
+				"title": "Quokka.js: Install Missing Package only for Quokka File"
+			},
+			{
+				"command": "quokka.installQuokkaPlugin",
+				"title": "Quokka.js: Install Quokka Plugin"
+			},
+			{
+				"command": "quokka.addImport",
+				"title": "Quokka.js: Add Import"
+			},
+			{
+				"command": "quokka.addRequire",
+				"title": "Quokka.js: Add Require"
+			},
+			{
+				"command": "quokka.showValue",
+				"title": "Quokka.js: Show Value"
+			},
+			{
+				"command": "quokka.goToLineInQuokkaFile",
+				"title": "Quokka.js: Focus Active Quokka File"
+			},
+			{
+				"command": "quokka.showLicense",
+				"title": "Quokka.js: Manage License Key"
+			},
+			{
+				"command": "quokka.switchToPro",
+				"title": "Quokka.js: Switch to 'Pro' Edition"
+			},
+			{
+				"command": "quokka.switchToCommunity",
+				"title": "Quokka.js: Switch to 'Community' Edition"
+			},
+			{
+				"command": "quokka.selectWorkspaceFolder",
+				"title": "Quokka.js: Select Workspace Folder"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "quokka.createFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.createJavaScriptFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.createTypeScriptFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.showInstrumentedFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.makeQuokkaFromExistingFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.runOnSave",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.runOnce",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.stopCurrent",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.stopAll",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.installMissingPackageToProject",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.installMissingPackageToQuokka",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.showValue",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.goToLineInQuokkaFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.selectWorkspaceFolder",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.installQuokkaPlugin",
+					"when": "false"
+				},
+				{
+					"command": "quokka.addImport",
+					"when": "false"
+				},
+				{
+					"command": "quokka.addRequire",
+					"when": "false"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "quokka.makeQuokkaFromExistingFile",
+				"key": "ctrl+k q",
+				"mac": "cmd+k q",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.createJavaScriptFile",
+				"key": "ctrl+k j",
+				"mac": "cmd+k j",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.createTypeScriptFile",
+				"key": "ctrl+k t",
+				"mac": "cmd+k t",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.stopCurrent",
+				"key": "ctrl+k e",
+				"mac": "cmd+k s",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.showOutput",
+				"key": "ctrl+k l",
+				"mac": "cmd+k l",
+				"when": "!terminalFocus"
+			},
+			{
+				"command": "quokka.showValue",
+				"key": "ctrl+k v",
+				"mac": "cmd+k v",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.installMissingPackageToQuokka",
+				"key": "ctrl+k i",
+				"mac": "cmd+k i",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			}
+		],
+		"languages": [
+			{
+				"id": "wallaby-output",
+				"mimetypes": [
+					"text/x-code-output"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "wallaby-output",
+				"scopeName": "wallaby.output",
+				"path": "./quokka-output.tmLanguage"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Quokka configuration",
+			"properties": {
+				"quokka.suppressExpirationNotifications": {
+					"description": "Stop Quokka expiring license update reminders",
+					"type": "boolean",
+					"default": false
+				},
+				"quokka.showOutputOnStart": {
+					"description": "Show Quokka output window on start up",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.colorizeOutput": {
+					"description": "Colorize Quokka output",
+					"type": "boolean",
+					"default": true
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"build": "node ./node_modules/grunt/bin/grunt",
+		"pub": "npm run build && vsce publish && vsce package && node ./node_modules/grunt/bin/grunt upload-to-s3 && node ./node_modules/grunt/bin/grunt bump"
+	},
+	"dependencies": {
+		"tslib": "^1.9.3",
+		"vsls": "^0.3.426"
+	},
+	"devDependencies": {
+		"eslint": "^3.6.0",
+		"grunt": "*",
+		"grunt-browserify": "*",
+		"grunt-bump": "0.0.16",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-compress": "^0.12.0",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-ts": "^6.0.0-beta.16",
+		"lodash": "*",
+		"mocha": "^2.3.3",
+		"typescript": "^3.1.1",
+		"vsce": "^1.46.0",
+		"vscode": "^1.1.21"
+	},
+	"__metadata": {
+		"id": "aae0701b-111f-49c1-9000-abd37a442f28",
+		"publisherId": "9e43bb4e-4318-4e59-b5c2-df1109a963dd",
+		"publisherDisplayName": "Wallaby.js"
+	}
+}

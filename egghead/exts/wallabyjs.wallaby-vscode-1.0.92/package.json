@@ -1,0 +1,282 @@
+{
+	"name": "wallaby-vscode",
+	"displayName": "Wallaby.js",
+	"description": "Integrated Continuous Testing Tool for JavaScript.",
+	"version": "1.0.92",
+	"author": "Wallaby.js",
+	"homepage": "http://wallabyjs.com",
+	"bugs": {
+		"url": "https://github.com/wallabyjs/public/issues"
+	},
+	"publisher": "WallabyJs",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"keywords": [
+		"testing",
+		"runner",
+		"unittest",
+		"JavaScript",
+		"TypeScript"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./index",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "wallaby.start",
+				"title": "Wallaby.js: Start"
+			},
+			{
+				"command": "wallaby.stop",
+				"title": "Wallaby.js: Stop"
+			},
+			{
+				"command": "wallaby.showCommandPalette",
+				"title": "Wallaby.js: Show Commands"
+			},
+			{
+				"command": "wallaby.jumpToFailingTest",
+				"title": "Wallaby.js: Jump to Failing Test"
+			},
+			{
+				"command": "wallaby.jumpToErrorSource",
+				"title": "Wallaby.js: Jump to Error Source"
+			},
+			{
+				"command": "wallaby.toggleUncovered",
+				"title": "Wallaby.js: Toggle Uncovered Code Regions"
+			},
+			{
+				"command": "wallaby.showLineTests",
+				"title": "Wallaby.js: Show Line Tests"
+			},
+			{
+				"command": "wallaby.showFailingTests",
+				"title": "Wallaby.js: Show Failing Tests"
+			},
+			{
+				"command": "wallaby.showSideBySideDiff",
+				"title": "Wallaby.js: Show Side-by-Side Diff"
+			},
+			{
+				"command": "wallaby.runProjectTests",
+				"title": "Wallaby.js: Run Project Tests"
+			},
+			{
+				"command": "wallaby.runFileTests",
+				"title": "Wallaby.js: Run File Tests"
+			},
+			{
+				"command": "wallaby.runLineTests",
+				"title": "Wallaby.js: Run Line Tests"
+			},
+			{
+				"command": "wallaby.updateProjectSnapshots",
+				"title": "Wallaby.js: Update Project Snapshots"
+			},
+			{
+				"command": "wallaby.updateFileSnapshots",
+				"title": "Wallaby.js: Update File Snapshots"
+			},
+			{
+				"command": "wallaby.updateTestSnapshots",
+				"title": "Wallaby.js: Update Test Snapshots"
+			},
+			{
+				"command": "wallaby.openWallabyApp",
+				"title": "Wallaby.js: Open Wallaby App"
+			},
+			{
+				"command": "wallaby.selectConfigFile",
+				"title": "Wallaby.js: Select Configuration File"
+			},
+			{
+				"command": "wallaby.showLastScreenshot",
+				"title": "Wallaby.js: Show Last Screenshot"
+			},
+			{
+				"command": "wallaby.showLicense",
+				"title": "Wallaby.js: Manage License Key"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "wallaby.showCommandPalette",
+				"key": "ctrl+shift+=",
+				"mac": "cmd+shift+="
+			},
+			{
+				"command": "wallaby.start",
+				"key": "ctrl+shift+r r",
+				"mac": "cmd+shift+r r"
+			},
+			{
+				"command": "wallaby.stop",
+				"key": "ctrl+shift+r s",
+				"mac": "cmd+shift+r s"
+			},
+			{
+				"command": "wallaby.runProjectTests",
+				"key": "ctrl+shift+r p",
+				"mac": "cmd+shift+r p"
+			},
+			{
+				"command": "wallaby.showLastScreenshot",
+				"key": "ctrl+shift+r h",
+				"mac": "cmd+shift+r h"
+			},
+			{
+				"command": "wallaby.runLineTests",
+				"key": "ctrl+shift+r c",
+				"mac": "cmd+shift+r c",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.runFileTests",
+				"key": "ctrl+shift+r f",
+				"mac": "cmd+shift+r f",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.jumpToFailingTest",
+				"key": "ctrl+shift+r o",
+				"mac": "cmd+shift+r o",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.jumpToErrorSource",
+				"key": "ctrl+shift+r p",
+				"mac": "cmd+shift+r p",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.toggleUncovered",
+				"key": "ctrl+shift+r u",
+				"mac": "cmd+shift+r u",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.showFailingTests",
+				"key": "ctrl+shift+r t",
+				"mac": "cmd+shift+r t"
+			},
+			{
+				"command": "wallaby.showLineTests",
+				"key": "ctrl+shift+r l",
+				"mac": "cmd+shift+r l",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wallaby.showSideBySideDiff",
+				"key": "ctrl+shift+r d",
+				"mac": "cmd+shift+r d",
+				"when": "editorTextFocus"
+			}
+		],
+		"languages": [
+			{
+				"id": "wallaby-output",
+				"mimetypes": [
+					"text/x-code-output"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "wallaby-output",
+				"scopeName": "wallaby.output",
+				"path": "./wallaby-output.tmLanguage"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Wallaby configuration",
+			"properties": {
+				"wallaby.useHttpForDownload": {
+					"description": "Use HTTP protocol to download wallaby updates",
+					"type": "boolean",
+					"default": false
+				},
+				"wallaby.strictSSL": {
+					"description": "Use strict SSL to download wallaby updates",
+					"type": "boolean",
+					"default": true
+				},
+				"wallaby.noAutomaticInstall": {
+					"description": "Stop automatic wallaby core updates",
+					"type": "boolean",
+					"default": false
+				},
+				"wallaby.showUpdateNotifications": {
+					"description": "Show wallaby core update notifications",
+					"type": "boolean",
+					"default": true
+				},
+				"wallaby.suppressExpirationNotifications": {
+					"description": "Stop wallaby expiring license update reminders",
+					"type": "boolean",
+					"default": false
+				},
+				"wallaby.node": {
+					"description": "Path to node.js executable that is used to run wallaby core",
+					"type": "string",
+					"default": ""
+				},
+				"wallaby.outputContentSize": {
+					"description": "Wallaby output content limit in bytes",
+					"type": "number",
+					"default": 0
+				},
+				"wallaby.colors": {
+					"description": "Wallaby gutter indicators colors (requires a restart after change)",
+					"type": "object",
+					"default": {
+						"covered": "#62b455",
+						"errorPath": "#ffa0a0",
+						"errorSource": "#fe536a",
+						"notCovered": "#cccccc",
+						"partiallyCovered": "#d2a032"
+					}
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"lodash": "*",
+		"grunt": "*",
+		"grunt-babel": "5.0.1",
+		"grunt-browserify": "*",
+		"grunt-bump": "0.0.16",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-compress": "^0.12.0",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-uglify": "*",
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"adm-zip-mit": "0.4.12",
+		"fs-extra": "0.26.2",
+		"lockfile": "1.0.3",
+		"openurl": "1.1.1",
+		"q": "1.4.1",
+		"request": "2.65.0",
+		"tar-stream": "1.3.1",
+		"unbzip2-stream": "1.0.8"
+	},
+	"__metadata": {
+		"id": "6766254a-8e43-4ebc-9b89-e5be39cb5318",
+		"publisherId": "9e43bb4e-4318-4e59-b5c2-df1109a963dd",
+		"publisherDisplayName": "Wallaby.js"
+	}
+}

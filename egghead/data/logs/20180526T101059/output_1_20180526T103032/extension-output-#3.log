@@ -1,0 +1,240 @@
+​​​​​0 failing tests, 3 passing​​​​​
+​​​​​1 failing test, 2 passing​​​​​
+  
+  ​​​​isPalindrome isPalindrome("rotor") - true​​​​ ​​​[16 ms]​​​​
+    ​​​​
+    ​​Expected: true​​
+    ​​Received: false​​
+      at Object.test ​index.spec.js:19:4​
+​​​​​0 failing tests, 3 passing​​​​​
+​​​​​0 failing tests, 0 passing​​​​​
+​​​​​​​​​​
+​​TypeError: Cannot read property 'length' of undefined​​
+  at Object.<anonymous> ​index.spec.js:23:0​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (23:33)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (23:38)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 3 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (25:0)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 3 passing​​​​​
+​​​​​0 failing tests, 3 passing​​​​​
+​​​​​​​​​​
+​​Cannot read property 'length' of undefined​​
+  at Suite.Object.<anonymous>.describe ​index.spec.js:24:2​
+  at Object.<anonymous> ​index.spec.js:23:0​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (28:33)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (28:40)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (28:53)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 6 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (30:2)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (31:2)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 6 passing​​​​​
+​​​​​0 failing tests, 7 passing​​​​​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​0 failing tests, 0 passing​​​​​
+​​​​​​​​​​
+​​TypeError: Cannot read property 'length' of undefined​​
+  at Object.<anonymous> ​index.spec.js:36:0​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​0 failing tests, 0 passing​​​​​
+​​​​​​​​​​
+​​TypeError: Cannot read property 'length' of undefined​​
+  at Object.<anonymous> ​index.spec.js:24:2​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (36:55)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 8 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (39:4)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unterminated string constant (39:4)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (39:19)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​​​​​​
+​​t is not defined​​
+  at Suite.Object.<anonymous>.describe ​index.spec.js:37:2​
+  at Object.<anonymous> ​index.spec.js:36:0​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​​​​​​
+​​Cannot read property 'replace' of undefined​​
+  at Suite.Object.<anonymous>.describe ​index.spec.js:37:2​
+  at Object.<anonymous> ​index.spec.js:36:0​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​​​​​​
+​​Cannot read property 'length' of undefined​​
+  at Suite.Object.<anonymous>.describe ​index.spec.js:37:2​
+  at Object.<anonymous> ​index.spec.js:36:0​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (42:43)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 8 passing​​​​​
+​​​​​​​​​​
+​​row is not defined​​
+  at Suite.Object.<anonymous>.describe ​index.spec.js:37:2​
+  at Object.<anonymous> ​index.spec.js:36:0​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (42:49)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (42:51)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 11 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (44:2)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 11 passing​​​​​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[0 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[10 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[0 ms]​​​​
+    ​​​​
+    ​​ReferenceError: input is not defined​​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: input is not defined​​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[11 ms]​​​​
+    ​​​​
+    ​​ReferenceError: input is not defined​​
+      at test.each.row ​index.spec.js:43:4​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[11 ms]​​​​
+    ​​​​
+    ​​TypeError: Cannot read property 'toLowerCase' of undefined​​
+      at isPalindrome ​index.js:2:2​
+      at test.each.row ​index.spec.js:43:4​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (43:36)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 11 passing​​​​​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: expoect is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: expoect is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[11 ms]​​​​
+    ​​​​
+    ​​ReferenceError: expoect is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[2 ms]​​​​
+    ​​​​
+    ​​ReferenceError: e is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: e is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[10 ms]​​​​
+    ​​​​
+    ​​ReferenceError: e is not defined​​
+      at test.each.row ​index.spec.js:44:4​
+​​​​​0 failing tests, 11 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (45:2)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 11 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (44:28)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​0 failing tests, 11 passing​​​​​
+[Error] ​​Failed to parse index.spec.js, SyntaxError: Unexpected token (42:43)​​
+[Error] ​​    at _combinedTickCallback (internal/process/next_tick.js:131:7)​​
+[Error] ​​    at process._tickCallback (internal/process/next_tick.js:180:9)​​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[0 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:43:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[50 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:43:4​
+​​​​​3 failing tests, 8 passing​​​​​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("rotor") - true​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Typewriter") - false​​​​ ​​​[1 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:44:4​
+  
+  ​​​​isPalindrome - each template literal isPalindrome("Racecar") - true​​​​ ​​​[11 ms]​​​​
+    ​​​​
+    ​​ReferenceError: row is not defined​​
+      at test.each ​index.spec.js:44:4​
+​​​​​0 failing tests, 11 passing​​​​​

@@ -1,0 +1,11 @@
+4/22/2018, 2:14:46 PM:
+----------------------
+This experimental syntax requires enabling the parser plugin/Users/avanslaars/projects/redux-actions-course/src/lib/todoServices.js:: 'throwExpressions' (/Users/avanslaars/projects/redux-actions-course/src/lib/todoServices.js:19:15)
+  17 |     body: JSON.stringify({ name: name, isComplete: false })
+  18 |   }).then(res => res.json())
+> 19 |   .then(() => throw new Error('Boom!'))
+     |               ^
+  20 | }
+  21 | 
+  22 | export const updateTodo = todo => {
+

@@ -1,0 +1,23 @@
+[2018-02-02 09:28:13.001] [renderer1] [error] Cannot read property 'result' of null: TypeError: Cannot read property 'result' of null
+    at Function.<anonymous> (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:4050:358)
+    at file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:4510:275
+    at Object.g.__generator.a.label [as next] (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:4510:380)
+    at s (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:149:1011)
+    at Object.g [as _notify] (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:139:729)
+    at Object.enter (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:143:61)
+    at n.Class.derive._oncancel._run (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:144:866)
+    at n.Class.derive._oncancel._completed (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:144:307)
+    at Object.g [as _notify] (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:139:729)
+    at Object.enter (file:///Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/workbench.main.js:143:61)
+[2018-02-02 10:15:04.441] [renderer1] [error] spawn /usr/local/bin/git ENFILE: Error: spawn /usr/local/bin/git ENFILE
+	at exports._errnoException (util.js:1050:11)
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:193:32)
+	at onErrorNT (internal/child_process.js:367:16)
+	at _combinedTickCallback (internal/process/next_tick.js:80:11)
+	at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-02-02 10:15:05.824] [renderer1] [error] spawn /usr/local/bin/git ENFILE: Error: spawn /usr/local/bin/git ENFILE
+	at exports._errnoException (util.js:1050:11)
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:193:32)
+	at onErrorNT (internal/child_process.js:367:16)
+	at _combinedTickCallback (internal/process/next_tick.js:80:11)
+	at process._tickCallback (internal/process/next_tick.js:104:9)

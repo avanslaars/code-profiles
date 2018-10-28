@@ -1,0 +1,215 @@
+{
+	"name": "prettier-vscode",
+	"displayName": "Prettier - Code formatter",
+	"description": "VS Code plugin for prettier/prettier",
+	"version": "1.6.1",
+	"publisher": "esbenp",
+	"author": "Esben Petersen <@esbenp>",
+	"galleryBanner": {
+		"color": "#ffe04b",
+		"theme": "light"
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/prettier/prettier-vscode.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/prettier/prettier-vscode/issues"
+	},
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"keywords": [
+		"multi-root ready"
+	],
+	"categories": [
+		"Formatters"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"icon": "icon.png",
+	"main": "./out/src/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Prettier - Code formatter configuration",
+			"properties": {
+				"prettier.disableLanguages": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"vue"
+					],
+					"description": "A list of languages IDs to disable this extension on",
+					"scope": "window"
+				},
+				"prettier.eslintIntegration": {
+					"type": "boolean",
+					"default": false,
+					"description": "Use 'prettier-eslint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from eslint rules.",
+					"scope": "resource"
+				},
+				"prettier.tslintIntegration": {
+					"type": "boolean",
+					"default": false,
+					"description": "Use 'prettier-tslint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from tslint rules.",
+					"scope": "resource"
+				},
+				"prettier.stylelintIntegration": {
+					"type": "boolean",
+					"default": false,
+					"description": "Use 'prettier-stylelint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from stylelint rules.",
+					"scope": "resource"
+				},
+				"prettier.requireConfig": {
+					"type": "boolean",
+					"default": false,
+					"description": "Require a 'prettierconfig' to format",
+					"scope": "resource"
+				},
+				"prettier.ignorePath": {
+					"type": "string",
+					"default": ".prettierignore",
+					"description": "Path to a .prettierignore or similar file",
+					"scope": "resource"
+				},
+				"prettier.printWidth": {
+					"type": "integer",
+					"default": 80,
+					"description": "Fit code within this line limit",
+					"scope": "resource"
+				},
+				"prettier.tabWidth": {
+					"type": "integer",
+					"default": 2,
+					"description": "Number of spaces it should use per tab",
+					"scope": "resource"
+				},
+				"prettier.singleQuote": {
+					"type": "boolean",
+					"default": false,
+					"description": "If true, will use single instead of double quotes",
+					"scope": "resource"
+				},
+				"prettier.trailingComma": {
+					"type": "string",
+					"enum": [
+						"none",
+						"es5",
+						"all"
+					],
+					"default": "none",
+					"description": "Controls the printing of trailing commas wherever possible.\n Valid options:\n    'none' - No trailing commas\n    'es5' - Trailing commas where valid in ES5 (objects, arrays, etc)\n    'all' - Trailing commas wherever possible (function arguments)",
+					"scope": "resource"
+				},
+				"prettier.bracketSpacing": {
+					"type": "boolean",
+					"default": true,
+					"description": "Controls the printing of spaces inside object literals",
+					"scope": "resource"
+				},
+				"prettier.jsxBracketSameLine": {
+					"type": "boolean",
+					"default": false,
+					"description": "If true, puts the `>` of a multi-line jsx element at the end of the last line instead of being alone on the next line",
+					"scope": "resource"
+				},
+				"prettier.parser": {
+					"type": "string",
+					"enum": [
+						"babylon",
+						"flow"
+					],
+					"default": "babylon",
+					"description": "Override the parser. You shouldn't have to change this setting.",
+					"scope": "resource"
+				},
+				"prettier.semi": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to add a semicolon at the end of every line",
+					"scope": "resource"
+				},
+				"prettier.useTabs": {
+					"type": "boolean",
+					"default": false,
+					"description": "Indent lines with tabs",
+					"scope": "resource"
+				},
+				"prettier.proseWrap": {
+					"type": "string",
+					"enum": [
+						"preserve",
+						"always",
+						"never"
+					],
+					"default": "preserve",
+					"description": "(Markdown) wrap prose over multiple lines"
+				},
+				"prettier.arrowParens": {
+					"type": "string",
+					"enum": [
+						"avoid",
+						"always"
+					],
+					"default": "avoid",
+					"description": "Include parentheses around a sole arrow function parameter",
+					"scope": "resource"
+				}
+			}
+		},
+		"jsonValidation": [
+			{
+				"fileMatch": ".prettierrc",
+				"url": "http://json.schemastore.org/prettierrc"
+			},
+			{
+				"fileMatch": ".prettierrc.json",
+				"url": "http://json.schemastore.org/prettierrc"
+			}
+		],
+		"languages": [
+			{
+				"id": "json",
+				"filenames": [
+					".prettierrc"
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc --watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "cd testEslint && npm i && cd ../testTslint && npm i && cd .. && cross-env CODE_TESTS_WORKSPACE=testWorkspace.code-workspace node ./node_modules/vscode/bin/test",
+		"version": "node ./scripts/version.js && git add CHANGELOG.md"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.1",
+		"@types/node": "~7.0.65",
+		"@types/resolve": "0.0.8",
+		"cross-env": "^5.1.6",
+		"mocha": "^5.2.0",
+		"typescript": "^2.9.1",
+		"vscode": "^1.1.18"
+	},
+	"dependencies": {
+		"ignore": "^3.3.8",
+		"prettier": "1.14.2",
+		"prettier-eslint": "^8.8.1",
+		"prettier-stylelint": "^0.4.2",
+		"prettier-tslint": "^0.4.0",
+		"read-pkg-up": "^4.0.0",
+		"resolve": "^1.7.1"
+	},
+	"__metadata": {
+		"id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
+		"publisherId": "d16f4e39-2ffb-44e3-9c0d-79d873570e3a",
+		"publisherDisplayName": "Esben Petersen"
+	}
+}

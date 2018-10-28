@@ -1,0 +1,16 @@
+[2018-01-30 07:04:27.307] [exthost3] [info] extension host started
+[2018-01-30 07:04:27.332] [exthost3] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.332] [exthost3] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-01-30 07:04:27.408] [exthost3] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.408] [exthost3] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-01-30 07:04:27.494] [exthost3] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.494] [exthost3] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-01-30 07:04:27.517] [exthost3] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.517] [exthost3] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.quokka-vscode-1.0.94/index
+[2018-01-30 07:04:27.518] [exthost3] [info] ExtensionService#_doActivateExtension WallabyJs.wallaby-vscode {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.518] [exthost3] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.wallaby-vscode-1.0.75/index
+[2018-01-30 07:04:27.519] [exthost3] [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.519] [exthost3] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-0.18.0/out/src/extension
+[2018-01-30 07:04:27.534] [exthost3] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-01-30 07:04:27.534] [exthost3] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-1.1.2/out/src/extension
+[2018-01-30 07:04:27.735] [exthost3] [info] eager extensions activated

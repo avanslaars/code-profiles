@@ -1,0 +1,38 @@
+[2018-04-22 09:32:50.904] [sharedprocess] [info] main {"machineId":"95ee68271e790d2347442ebf0570f4b0c6bf9bb7a23da3e6afd9a9886694bcdd"}
+[2018-04-22 09:32:50.955] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:32:52.472] [sharedprocess] [info] Deleted from disk alefragnani.bookmarks-0.18.1
+[2018-04-22 09:32:54.606] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:32:54.613] [sharedprocess] [info] Deleted from disk esbenp.prettier-vscode-1.1.2
+[2018-04-22 09:32:54.626] [sharedprocess] [info] Deleted from disk WallabyJs.quokka-vscode-1.0.94
+[2018-04-22 09:32:54.637] [sharedprocess] [info] Deleted from disk WallabyJs.wallaby-vscode-1.0.75
+[2018-04-22 09:32:55.230] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:32:55.239] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:32:55.243] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:32:55.365] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:32:55.396] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:32:57.844] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:32:58.470] [sharedprocess] [info] Installing extension: quokka-vscode
+[2018-04-22 09:32:58.485] [sharedprocess] [info] Installing extension: wallaby-vscode
+[2018-04-22 09:32:58.486] [sharedprocess] [info] Installing extension: prettier-vscode
+[2018-04-22 09:33:00.747] [sharedprocess] [info] Downloaded extension: wallaby-vscode
+[2018-04-22 09:33:02.225] [sharedprocess] [info] Downloaded extension: quokka-vscode
+[2018-04-22 09:33:03.211] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.WallabyJs.wallaby-vscode-1.0.83: WallabyJs.wallaby-vscode-1.0.83
+[2018-04-22 09:33:03.211] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.wallaby-vscode-1.0.83
+[2018-04-22 09:33:03.211] [sharedprocess] [info] Installation completed. WallabyJs.wallaby-vscode-1.0.83
+[2018-04-22 09:33:03.980] [sharedprocess] [info] Extensions installed successfully: WallabyJs.wallaby-vscode
+[2018-04-22 09:33:04.141] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:33:04.199] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:33:07.708] [sharedprocess] [info] Downloaded extension: prettier-vscode
+[2018-04-22 09:33:08.398] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.WallabyJs.quokka-vscode-1.0.121: WallabyJs.quokka-vscode-1.0.121
+[2018-04-22 09:33:08.398] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.quokka-vscode-1.0.121
+[2018-04-22 09:33:08.398] [sharedprocess] [info] Installation completed. WallabyJs.quokka-vscode-1.0.121
+[2018-04-22 09:33:08.888] [sharedprocess] [info] Extensions installed successfully: WallabyJs.quokka-vscode
+[2018-04-22 09:33:09.013] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:33:09.126] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:33:26.065] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.esbenp.prettier-vscode-1.3.1: esbenp.prettier-vscode-1.3.1
+[2018-04-22 09:33:26.066] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-1.3.1
+[2018-04-22 09:33:26.066] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode-1.3.1
+[2018-04-22 09:33:27.245] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2018-04-22 09:33:27.364] [sharedprocess] [info] Scanned user extensions: 6
+[2018-04-22 09:33:27.386] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-22 09:33:30.916] [sharedprocess] [info] Starting to clean up unused language packs.

@@ -1,0 +1,26 @@
+[Info  - 9:37:26 AM] Using tsserver from: /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib
+[Info  - 9:37:27 AM] Forking TSServer
+PATH: /Users/avanslaars/.rvm/gems/ruby-2.3.4/bin:/Users/avanslaars/.rvm/gems/ruby-2.3.4@global/bin:/Users/avanslaars/.rvm/rubies/ruby-2.3.4/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/avanslaars/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/avanslaars/.rvm/bin
+[Info  - 9:37:27 AM] Started TSServer
+[Error  - 12:05:38 PM] 'quickinfo' request failed with error.
+Error processing request. Could not find file: '/Users/avanslaars/projects/redux-actions-course/src/store.js'.
+Error: Could not find file: '/Users/avanslaars/projects/redux-actions-course/src/store.js'.
+    at getValidSourceFile (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:84446:23)
+    at Object.getQuickInfoAtPosition (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:84602:30)
+    at IOSession.Session.getQuickInfoWorker (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:91480:62)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:90597:61)
+    at /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:92067:88
+    at IOSession.Session.executeWithRequestId (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:92058:28)
+    at IOSession.Session.executeCommand (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:92067:33)
+    at IOSession.Session.onMessage (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:92087:35)
+    at Interface.<anonymous> (/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js:93288:27)
+    at emitOne (events.js:96:13)
+    at Interface.emit (events.js:191:7)
+    at Interface._onLine (readline.js:241:10)
+    at Interface._normalWrite (readline.js:384:12)
+    at Socket.ondata (readline.js:101:10)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at readableAddChunk (_stream_readable.js:178:18)
+    at Socket.Readable.push (_stream_readable.js:136:10)
+    at Pipe.onread (net.js:560:20)

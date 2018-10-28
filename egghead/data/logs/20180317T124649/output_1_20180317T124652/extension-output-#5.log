@@ -1,0 +1,4 @@
+[Info  - 12:50:15 PM] Using tsserver from: /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib
+[Info  - 12:50:15 PM] Forking TSServer
+PATH: /Users/avanslaars/.rvm/gems/ruby-2.3.4/bin:/Users/avanslaars/.rvm/gems/ruby-2.3.4@global/bin:/Users/avanslaars/.rvm/rubies/ruby-2.3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/avanslaars/.rvm/bin
+[Info  - 12:50:15 PM] Started TSServer

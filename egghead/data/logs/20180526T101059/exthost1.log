@@ -1,0 +1,78 @@
+[2018-05-26 10:11:05.570] [exthost1] [info] extension host started
+[2018-05-26 10:11:05.617] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:05.617] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-05-26 10:11:05.758] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:05.758] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-05-26 10:11:06.159] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:06.159] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-05-26 10:11:06.240] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:06.240] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.quokka-vscode-1.0.121/index
+[2018-05-26 10:11:06.242] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.wallaby-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:06.242] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.wallaby-vscode-1.0.83/index
+[2018-05-26 10:11:06.244] [exthost1] [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:06.244] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-0.18.2/out/src/extension
+[2018-05-26 10:11:06.266] [exthost1] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:11:06.266] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-1.3.1/out/src/extension
+[2018-05-26 10:11:06.903] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2018-05-26 10:11:06.903] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/npm/out/main
+[2018-05-26 10:11:06.997] [exthost1] [info] eager extensions activated
+[2018-05-26 10:11:18.230] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2018-05-26 10:11:18.230] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features/out/extension
+[2018-05-26 10:11:27.087] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:11:27.087] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/out/extension
+[2018-05-26 10:11:27.141] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:11:27.141] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/extension-editing/out/extension
+[2018-05-26 10:11:27.178] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:11:27.178] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/out/jsonMain
+[2018-05-26 10:12:13.546] [exthost1] [info] extension host started
+[2018-05-26 10:12:13.581] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:13.581] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-05-26 10:12:13.692] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:13.693] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-05-26 10:12:14.005] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:14.005] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-05-26 10:12:14.069] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:14.069] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.quokka-vscode-1.0.125/index
+[2018-05-26 10:12:14.071] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.wallaby-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:14.071] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.wallaby-vscode-1.0.84/index
+[2018-05-26 10:12:14.072] [exthost1] [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:14.072] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-0.19.1/out/src/extension
+[2018-05-26 10:12:14.087] [exthost1] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:12:14.087] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-1.3.1/out/src/extension
+[2018-05-26 10:12:14.490] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2018-05-26 10:12:14.490] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/npm/out/main
+[2018-05-26 10:12:14.570] [exthost1] [info] eager extensions activated
+[2018-05-26 10:12:14.580] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-05-26 10:12:14.580] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/out/extension
+[2018-05-26 10:12:14.594] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-05-26 10:12:14.594] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/out/jsonMain
+[2018-05-26 10:18:06.770] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2018-05-26 10:18:06.770] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features/out/extension
+[2018-05-26 10:30:37.971] [exthost1] [info] extension host started
+[2018-05-26 10:30:38.032] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.032] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-05-26 10:30:38.194] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.194] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-05-26 10:30:38.410] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.410] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-05-26 10:30:38.427] [exthost1] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.427] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/CoenraadS.bracket-pair-colorizer-1.0.55/out/src/extension
+[2018-05-26 10:30:38.446] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.446] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.quokka-vscode-1.0.125/index
+[2018-05-26 10:30:38.447] [exthost1] [info] ExtensionService#_doActivateExtension WallabyJs.wallaby-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.447] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/WallabyJs.wallaby-vscode-1.0.84/index
+[2018-05-26 10:30:38.450] [exthost1] [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.450] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-0.19.1/out/src/extension
+[2018-05-26 10:30:38.463] [exthost1] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-05-26 10:30:38.463] [exthost1] [info] ExtensionService#loadCommonJSModule /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-1.3.1/out/src/extension
+[2018-05-26 10:30:38.691] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2018-05-26 10:30:38.691] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/npm/out/main
+[2018-05-26 10:30:38.752] [exthost1] [info] eager extensions activated
+[2018-05-26 10:30:38.755] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2018-05-26 10:30:38.755] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features/out/extension
+[2018-05-26 10:38:41.292] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:38:41.292] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/out/extension
+[2018-05-26 10:38:41.307] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:38:41.307] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/extension-editing/out/extension
+[2018-05-26 10:38:41.329] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-05-26 10:38:41.329] [exthost1] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/out/jsonMain

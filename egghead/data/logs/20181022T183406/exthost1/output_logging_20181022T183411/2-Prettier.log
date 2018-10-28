@@ -1,0 +1,16 @@
+10/28/2018, 9:37:09 AM:
+-----------------------
+Unexpected token (/Users/avanslaars/projects/__redux-actions-course__/.vscode/settings.json:7:1)
+  5 |     "sideBar.background": "#444444"
+  6 |   }}
+> 7 | }
+    | ^
+
+10/28/2018, 9:37:34 AM:
+-----------------------
+Unexpected token (/Users/avanslaars/projects/__redux-actions-course__/.vscode/settings.json:5:1)
+  3 |     "titleBar.activeForeground": "#ff0000"
+  4 |   }}
+> 5 | }
+    | ^
+

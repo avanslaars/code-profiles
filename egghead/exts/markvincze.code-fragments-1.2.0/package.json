@@ -1,0 +1,210 @@
+{
+	"name": "code-fragments",
+	"displayName": "Code Fragments",
+	"description": "Save code fragments, and later easily insert them into source files.",
+	"version": "1.2.0",
+	"publisher": "markvincze",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/markvincze/vscode-codeFragments.git"
+	},
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#282C34",
+		"theme": "dark"
+	},
+	"badges": [
+		{
+			"url": "https://travis-ci.org/markvincze/vscode-codeFragments.svg?branch=master",
+			"href": "https://travis-ci.org/markvincze/vscode-codeFragments",
+			"description": "Build Status"
+		}
+	],
+	"author": {
+		"name": "Mark Vincze",
+		"url": "https://blog.markvincze.com"
+	},
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"toolbar",
+		"toolbox",
+		"fragments",
+		"presentation"
+	],
+	"activationEvents": [
+		"onCommand:saveSelectedCodeFragment",
+		"onView:codeFragments"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"id": "codeFragments",
+					"name": "Code Fragments"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "codeFragments.saveSelectedCodeFragment",
+				"title": "Save selection as Code Fragment"
+			},
+			{
+				"command": "codeFragments.insertCodeFragment",
+				"title": "Insert Code Fragment"
+			},
+			{
+				"command": "codeFragments.deleteCodeFragment",
+				"title": "Delete Code Fragment"
+			},
+			{
+				"command": "codeFragments.renameCodeFragment",
+				"title": "Rename Code Fragment"
+			},
+			{
+				"command": "codeFragments.moveUpCodeFragment",
+				"title": "Move up"
+			},
+			{
+				"command": "codeFragments.moveDownCodeFragment",
+				"title": "Move down"
+			},
+			{
+				"command": "codeFragments.moveToTopCodeFragment",
+				"title": "Move to top"
+			},
+			{
+				"command": "codeFragments.moveToBottomCodeFragment",
+				"title": "Move to bottom"
+			},
+			{
+				"command": "codeFragments.exportFragments",
+				"title": "Export all fragments to Json",
+				"icon": {
+					"light": "images/icon-export-light.png",
+					"dark": "images/icon-export-dark.png"
+				}
+			},
+			{
+				"command": "codeFragments.importFragments",
+				"title": "Import fragments from Json",
+				"icon": {
+					"light": "images/icon-import-light.png",
+					"dark": "images/icon-import-dark.png"
+				}
+			},
+			{
+				"command": "codeFragments.deleteAllFragments",
+				"title": "Delete all fragments",
+				"icon": {
+					"light": "images/icon-delete-light.png",
+					"dark": "images/icon-delete-dark.png"
+				}
+			}
+		],
+		"configuration": [
+			{
+				"type": "object",
+				"title": "Code Fragments",
+				"properties": {
+					"codeFragments.askForNameOnCreate": {
+						"type": "boolean",
+						"default": false,
+						"description": "Prompt for specifying a name when creating a new fragment."
+					}
+				}
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "codeFragments.insertCodeFragment",
+					"when": "never"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "codeFragments.saveSelectedCodeFragment",
+					"when": "editorTextFocus"
+				}
+			],
+			"view/title": [
+				{
+					"command": "codeFragments.exportFragments",
+					"when": "view == codeFragments",
+					"group": "navigation@0"
+				},
+				{
+					"command": "codeFragments.importFragments",
+					"when": "view == codeFragments",
+					"group": "navigation@1"
+				},
+				{
+					"command": "codeFragments.deleteAllFragments",
+					"when": "view == codeFragments",
+					"group": "navigation@2"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "codeFragments.deleteCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.baseGroup"
+				},
+				{
+					"command": "codeFragments.renameCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.baseGroup"
+				},
+				{
+					"command": "codeFragments.moveUpCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.moveGroup"
+				},
+				{
+					"command": "codeFragments.moveDownCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.moveGroup"
+				},
+				{
+					"command": "codeFragments.moveToTopCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.moveGroup"
+				},
+				{
+					"command": "codeFragments.moveToBottomCodeFragment",
+					"when": "view == codeFragments",
+					"group": "codeFragments.viewItemContext.moveGroup"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -c tslint.json 'src/**/*.ts'",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"mocha": "^3.5.0",
+		"tslint": "^5.8.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.8"
+	},
+	"__metadata": {
+		"id": "88960335-fc26-41e4-b6d5-8be57434b9b9",
+		"publisherId": "ec76ba9d-4511-4a0a-b5e3-f1aea41d09eb",
+		"publisherDisplayName": "Mark Vincze"
+	}
+}

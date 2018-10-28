@@ -1,0 +1,22 @@
+[2018-04-22 09:37:04.862] [main] [info] update#setState idle
+[2018-04-22 09:37:34.864] [main] [info] update#setState checking for updates
+[2018-04-22 09:37:35.390] [main] [info] update#setState idle
+[2018-04-22 10:37:35.021] [main] [info] update#setState checking for updates
+[2018-04-22 10:37:35.485] [main] [info] update#setState idle
+[2018-04-22 11:37:35.174] [main] [info] update#setState checking for updates
+[2018-04-22 11:37:35.641] [main] [info] update#setState idle
+[2018-04-22 12:37:35.329] [main] [info] update#setState checking for updates
+[2018-04-22 12:37:35.772] [main] [info] update#setState idle
+[2018-04-22 13:37:35.487] [main] [info] update#setState checking for updates
+[2018-04-22 13:37:35.930] [main] [info] update#setState idle
+[2018-04-22 14:37:35.644] [main] [info] update#setState checking for updates
+[2018-04-22 14:37:36.104] [main] [info] update#setState idle
+[2018-04-22 15:37:35.797] [main] [info] update#setState checking for updates
+[2018-04-22 15:37:36.236] [main] [info] update#setState idle
+[2018-04-22 16:37:35.944] [main] [info] update#setState checking for updates
+[2018-04-22 16:37:37.397] [main] [info] update#setState idle
+[2018-04-22 17:37:36.098] [main] [info] update#setState checking for updates
+[2018-04-22 17:37:36.560] [main] [info] update#setState idle
+[2018-04-22 18:44:27.502] [main] [info] update#setState checking for updates
+[2018-04-22 18:47:47.510] [main] [error] UpdateService error:  The request timed out.
+[2018-04-22 18:48:21.918] [main] [info] update#setState idle
