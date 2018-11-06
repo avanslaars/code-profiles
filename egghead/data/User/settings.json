@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Dank Mono, Operator Mono",
+  "editor.fontFamily": "Dank Mono, Operator Mono, FuraCode Nerd Font",
   "editor.tabSize": 2,
   "editor.quickSuggestions": false,
   "editor.parameterHints.enabled": false,
