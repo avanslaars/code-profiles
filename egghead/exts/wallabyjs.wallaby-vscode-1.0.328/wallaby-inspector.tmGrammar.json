@@ -1,0 +1,90 @@
+{
+  "scopeName": "source.wallaby-inspector",
+  "patterns": [
+    {
+      "include": "#code"
+    },
+    {
+      "include": "#error"
+    },
+    {
+      "include": "#string"
+    },
+    {
+      "comment": "header",
+      "match": "\u200b{5}[^\u200b]+\u200b{5}",
+      "name": "comment"
+    },
+    {
+      "comment": "shortcut",
+      "match": "\u200d{4}[^\u200d]+\u200d{4}",
+      "name": "entity.name.function"
+    },
+    {
+      "comment": "link",
+      "match": "\u200b{1}.*\u200b{1}",
+      "name": "storage.type"
+    },
+    {
+      "comment": "diff deletion",
+      "match": "\u200d{1}[^\u200d]+\u200d{1}",
+      "name": "markup.deleted markup.underline"
+    },
+    {
+      "comment": "diff insertion",
+      "match": "\u2060{1}[^\u2060]+\u2060{1}",
+      "name": "markup.inserted markup.underline"
+    }
+  ],
+  "repository": {
+    "code": {
+      "begin": "\u2007",
+      "end": "\u2007",
+      "patterns": [
+        {
+          "begin": ".*",
+          "while": "(^|\\G)(?!\\s*(\u2007))",
+          "patterns": [
+            {
+              "include": "source.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    "error": {
+      "begin": "\u2009",
+      "end": "\u2009",
+      "patterns": [
+        {
+          "begin": ".*",
+          "while": "(^|\\G)(?!\\s*(\u2009))",
+          "patterns": [
+            {
+              "comment": "error",
+              "match": ".+",
+              "name": "invalid"
+            }
+          ]
+        }
+      ]
+    },
+    "string": {
+      "begin": "\u200c",
+      "end": "\u200c",
+      "patterns": [
+        {
+          "begin": ".*",
+          "while": "(^|\\G)(?!\\s*(\u200c))",
+          "patterns": [
+            {
+              "comment": "string",
+              "match": ".+",
+              "name": "constant.numeric.js"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "scopeName": "source.quokka-recent",
+  "patterns": [
+    {
+      "include": "#javascript_file_fragment"
+    },
+    {
+      "comment": "file",
+      "match": "\u2060{1}[^\u2060]+\u2060{1}",
+      "name": "string.value markup.underline"
+    },
+    {
+      "comment": "date",
+      "match": "\u2007{1}[^\u2007]+\u2007{1}",
+      "name": "constant.numeric.js"
+    }
+  ],
+  "repository": {
+    "javascript_file_fragment": {
+      "begin": "\u200b",
+      "end": "\u200b",
+      "patterns": [
+        {
+          "begin": ".*",
+          "while": "(^|\\G)(?!\\s*(\u200b))",
+          "patterns": [
+            {
+              "include": "source.ts"
+            },
+            {
+              "include": "source.js"
+            },
+            {
+              "include": "source.jsx"
+            },
+            {
+              "include": "source.tsx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

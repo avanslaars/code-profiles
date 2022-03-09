@@ -1,0 +1,32 @@
+["INFO" - 7:51:22 AM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 7:51:22 AM] Extension Version: 9.3.0.
+["INFO" - 7:51:40 AM] Formatting vscode-userdata:/Users/avanslaars/code_profiles/egghead/data/User/settings.json
+["INFO" - 7:51:40 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "json"
+}
+["INFO" - 7:51:40 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 7:51:40 AM] Prettier Options:
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/Users/avanslaars/code_profiles/egghead/data/User/settings.json",
+  "parser": "json"
+}
+["INFO" - 7:51:40 AM] Formatting completed in 0.018ms.

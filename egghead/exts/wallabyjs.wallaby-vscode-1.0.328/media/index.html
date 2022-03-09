@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; font-src ${cspSource}; style-src ${cspSource} 'self' 'unsafe-inline'; img-src ${cspSource} https: data: vscode-webview:; script-src 'nonce-${nonce}';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="${root}/media/bootstrap.min.css">
+  <link rel="stylesheet" href="${root}/media/main.css">
+  <link rel="stylesheet" href="${root}/media/codicon.css">
+
+  <title>Wallaby</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id='main' class="page-contents">
+      <div class='logo'>
+        <a href="https://wallabyjs.com/?referrer=wsp">
+          <img src="${root}/images/logo.svg" />
+          <span>Wallaby</span>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav-items mr-5 pr-5">
+          <li data-section='welcome' class="active">Welcome</li>
+          <li data-section='whatsnew'>What's New</li>
+          <li data-section='tutorial'>Tutorial<div class='codicon codicon-bell-dot tutorial-warning'></div></li>
+          <li data-section='license'>License<div class='codicon codicon-warning license-warning'></div>
+            <div class='codicon codicon-error license-error'></div>
+          </li>
+          <li data-section='settings'>Settings</li>
+          <li data-section='resources'>Resources</li>
+          <li data-section='contact' class='contact-details'>Contact</li>
+        </ul>
+      </div>
+      <div class='content'>
+        <h2 id="welcome">Welcome</h2>
+        <p>New to Wallaby.js? Our <a href="#" class="open-tutorial">interactive tutorial</a> is a great way to get started.</p>
+        <div class='sale-section'>
+          <p class='sale-section-box'>It looks like you do not have a <b>Wallaby</b> license.
+          We wanted to let you know that <b>Wallaby</b> is currently <br class='d-none d-lg-block' /><b>discounted by <span class='sale-discount'></span>% for one week only</b>.</p>
+          <p class='text-center pt-2'>
+            <a
+              class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Purchase</a>
+            <a
+              class='button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="https://wallabyjs.com/?referrer=wsp">Read More</a>
+            <button class='dismiss-sale button license-action mx-auto mb-4 d-block d-md-inline-block'>Don't Show Again</button>
+          </p>
+          </div>
+        <p class='display-commands-hint'>You can quickly display all Wallaby.js commands using the keyboard shortcut:
+          <span class='code-text font-bold all-command-shortcut highlighted-text'></span>
+        </p>
+        <p>The tutorials below may also help, each providing step-by-step instructions that show how to configure
+          Wallaby.js some popular UI frameworks</b>:
+        <div class="tutorial-overview react"><img src="${root}/media/react-logo.png" title="React"><span><a
+              href="https://wallabyjs.com/docs/tutorial/react.html?referrer=wsp">Create React App</a></span></div>
+        <div class="tutorial-overview angular"><img src="${root}/media/angular-logo.svg" title="Angular"><span><a
+              href="https://wallabyjs.com/docs/tutorial/angular-cli.html?referrer=wsp">Angular CLI</a></span></div>
+        <div class="tutorial-overview vue"><img src="${root}/media/vue-logo.png" title="Vue.js"><span><a
+              href="https://wallabyjs.com/docs/tutorial/vue.html?referrer=wsp">Vue.js CLI</a></span></div>
+        </p>
+        <p>You may also watch a recording of a previous <a href="https://wallabyjs.com/webinar/?referrer=wsp">Wallaby Webinar</a>
+          that demonstrates many important Wallaby features:
+        <div class="webinar"><a href="https://youtu.be/ilueIinDtWw"><img class="image-border" src="${root}/media/webinar.png"
+              title='Click to watch the webinar on YouTube' /></a></div>
+        </p>
+
+        <div class='d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-5'>
+          <h2 id="whatsnew" class="flex-grow-1">What's New</h2>
+          <div id='showStartViewOnFeatureRelease' class='checkbox-setting whatsnew pt-2 pt-sm-0'>
+            <div class='text mr-0 mr-sm-2'>Notify about new features</div>
+            <div class='custom-checkbox codicon codicon-check'></div>
+          </div>
+        </div>
+
+        <p>The <b>What's New</b> section details recent major features and changes. For older news or more details about
+          minor updates and changes, please refer to our <a
+            href="https://wallabyjs.com/docs/intro/whatsnew.html?referrer=wsp">website</a>.</p>
+        <p class='feature-not-available'>The <span class='codicon codicon-warning d-inline-block'></span> icon beside
+          a feature indicates that this feature is not available because your license has expired.
+          To try a feature that is not available, you may renew your existing license or else request a temporary trial
+          license
+        </p>
+        <!--
+          "data-whats-new-version"
+
+            the version to display the feature for when "What's New is launched",
+            if previous verison < new-version then feature will display
+
+          "data-core-version"
+
+            the wallaby core version required for this feature
+        -->
+
+        <div class='feature' data-whats-new-version='5'
+            data-core-version='1.0.1135'>
+          <h4>Interactive Tutorial</h4>
+          <p>
+            Wallaby's new <a href="#" class="open-tutorial">interactive tutorial</a> is ideal for showing new users
+            how to use Wallaby. The tutorial may also be used by existing users who want to learn how to use new
+            features when they become available.</p>
+
+          <p>The tutorial is organized into a number of modules. As you finish each module, you may mark it as completed
+            so that you can track your progress.
+            You will be notified when the tutorial is updated; new or changed sections
+             within the tutorial will be highlighted for you.</p>
+            <p>
+            <img src="${root}/media/tutorial.png"/>
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='5'
+            data-core-version='1.0.1129'>
+          <h4>Test Explorer Integration</h4>
+          <p>
+            Wallaby now supports VS Code's built-in Test Explorer. The new Test Explorer UI shows all of the tests run by Wallaby
+            and is updated in real-time and with context menu actions to quickly access relevant Wallaby commands.</p>
+          <p>
+            <img data-gifffer="${root}/media/vsc_test_explorer.gif"/>
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='4'
+             data-core-version='1.0.1117'>
+          <h4>Improved Error Detail Hover</h4>
+          <p>
+            Wallaby now displays more error details (and corresponding actions)
+            such as stack with code context in editor hover tooltips.
+            Simply move your mouse over a line of code with an error, or use VS
+            Code <code>Show Hover</code> command on the line, and you will see
+            the error details.</p>
+          <p>
+            <img data-gifffer="${root}/media/vsc-tutorial-hover.gif"/>
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='4'
+             data-core-version='1.0.1118'>
+          <h4>New Jump to Line Test command</h4>
+
+          <p>
+            Wallaby now has a new <code>Jump to Line Test</code> command. When you run the command, Wallaby will show you the list of tests that are covering the line. You may quickly pick a test from the list and navigate to it.</p>
+          <p>
+            <img data-gifffer="${root}/media/jtlt-vsc.gif"/>
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='3' data-core-version='1.0.1084'>
+          <h4>Support for Jest v27</h4>
+
+          <div class='d-flex'>
+            <div class='flex-shrink-1'>
+              <p>
+                <img class='feature-image-jest' src="${root}/media/jest-feature-logo.svg">
+              </p>
+            </div>
+            <div class='w-100'>
+              <p class='pl-4'>
+                The next major version of Jest was released on <b>May 25, 2021</b>.
+                The changes in this major version release required significant updates to Wallaby's
+                Jest integration, which we had been working on for a number of months with Jest's
+                beta releases. We were pleased to be able to release support for Jest v27 within
+                a day after it was released.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='feature' data-whats-new-version='3' data-core-version='1.0.1086'>
+          <h4>Support for Angular v12</h4>
+
+          <div class='d-flex'>
+            <div class='flex-shrink-1'>
+              <p>
+                <img class='feature-image-angular' src="${root}/media/angular-feature-logo.svg">
+              </p>
+            </div>
+            <div class='w-100'>
+              <p class='pl-4'>
+                Angular v12 included a number of significant breaking changes that required
+            updates to Wallaby’s Angular integration. The latest version of Wallaby now
+            fully supports Angular CLI v12.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='feature' data-whats-new-version='3' data-core-version='1.0.1062'>
+          <h4>Output Inspector Settings</h4>
+
+          <p><a href="https://wallabyjs.com/docs/intro/output-inspector.html">Output Inspector</a> now provides settings
+            to control when the Output Inspector will be automatically displayed. To adjust your settings, use
+             the <span class='code-text font-bold highlighted-text'>Automatic Display</span> and
+             <span class='code-text font-bold highlighted-text'>Automatic Display Debugger Override</span> <a class='otherSettings'>VS Code Wallaby settings</a>.</p>
+          <p>
+        </div>
+
+        <div class='feature' data-whats-new-version='2' data-core-version='1.0.1054'>
+          <h4>Output Inspector</h4>
+
+          <p>Wallaby's new <a href="https://wallabyjs.com/docs/intro/output-inspector.html?referrer=wsp">Output Inspector</a> provides an
+            ergonomic and convenient way of inspecting logged values and errors details in a rich editor-friendly manner. Information
+            is displayed in a code editor window, providing rich keyboard support and allowing you to stay in your coding mindset so
+             that you don't lose your flow. Read <a href="https://wallabyjs.com/docs/intro/output-inspector.html?referrer=wsp">our docs</a>
+             for more information on how to use this new feature.</p>
+          <p>
+            <img src="${root}/media/output-inspector-poster.png" />
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-core-version='1.0.1004'>
+          <h4>Test Profiler</h4>
+
+          <p>Wallaby's <a href="https://wallabyjs.com/docs/intro/test-profiler.html?referrer=wsp">Test Profiler</a> is our first big
+            feature of 2021 and is expected to be a game changer for many of our users. The Test Profiler
+            allows you to quickly and easily get the CPU Profile for any test. No configuration is required to use the
+            Test Profiler, one simple click and you will
+            see the CPU profile for a test.</p>
+
+          <p>
+            <img data-gifffer="${root}/media/vsc-profile.gif" />
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-core-version='1.0.1010'>
+          <h4>Run to Breakpoint</h4>
+
+          <p><a href="https://wallabyjs.com/docs/intro/time-travel-debugger.html?referrer=wsp">Time Travel Debugger</a> now provides
+            two additional commands to <span class='code-text font-bold highlighted-text'>Run Back to Breakpoint</span>
+            and <span class='code-text font-bold highlighted-text'>Run Forward to Breakpoint</span>.
+            Use VS Code's standard debugger breakpoints with these commands to improve your Wallaby debugging
+            experience.</p>
+          <p>Please note that when Wallaby is running, you cannot use the mouse to set breakpoints (due to a <a
+              href="https://github.com/microsoft/vscode/issues/5923">VS Code limitation</a>); instead, use the keyboard
+            command (default: <span class='code-text font-bold highlighted-text'>F9</span>).</p>
+
+          <p>
+            <img src='${root}/media/ttd-debugactions-vsc.png' />
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-core-version='1.0.1011'>
+          <h4>Sticky Values</h4>
+
+          <p>Wallaby now allows you to view any number of values (<span
+              class='code-text font-bold highlighted-text'>Show
+              Value</span> and <span class='code-text font-bold highlighted-text'>Debugger on selection</span>) without
+            changing or editing your code. Inline values now survive
+            code changes and are updated with their latest values, as you type. A few new commands are available, <span
+              class='code-text font-bold highlighted-text'>Clear Value (Escape)</span>, <span
+              class='code-text font-bold highlighted-text'>Clear File Values (Escape, Escape)</span>, and <span
+              class='code-text font-bold highlighted-text'>Clear All Values</span> (clears values in all files).</p>
+
+          <p>
+            <img data-gifffer="${root}/media/vsc-sticky-values.gif" />
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-core-version='1.0.1023'>
+          <h4>Improved Show/Copy/Debug Value Selection</h4>
+
+          <p>We significantly improved Show Value detection when using <span
+              class='code-text font-bold highlighted-text'>Show Value</span>, <span
+              class='code-text font-bold highlighted-text'>Copy Value</span>, and <span
+              class='code-text font-bold highlighted-text'>Debugger on selection</span>.
+            This update enables fuzzy token selection instead of previously having to select an exact token to output.
+            In
+            addition to
+            being able to show values for additional syntax constructs, the feature also now has better support for code
+            transpiled with TypeScript and Babel.</p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-core-version='1.0.1009'>
+          <h4>Jest Performance Improvements</h4>
+
+          <p>With the help of the Wallaby's <a href="https://wallabyjs.com/docs/intro/test-profiler.html?referrer=wsp">Test
+              Profiler</a> we've
+            made incremental runs of Jest tests up to 5 times faster. The default create-react-app generated
+            test takes Jest CLI runner ~430ms in watch mode to run, the same test takes Jest + Wallaby ~80ms.</p>
+
+          <p>
+            <img src='${root}/media/cra-perf-jest-wallaby.png' />
+          </p>
+        </div>
+
+        <p class='text-center pt-2'>
+          <a class='license-action button mb-4' href="https://wallabyjs.com/docs/intro/whatsnew.html?referrer=wsp">Read More</a>
+        <p>
+
+        <h2 id="tutorial" data-tutorial-version="0">Tutorial<div class='codicon codicon-bell-dot tutorial-warning'></div></h2>
+
+        <div class="tutorial-info">
+          <p>Wallaby's interactive tutorial is suitable for both new users and existing users who want to stay on top of all new features. As you finish various tutorial parts, you may mark the tutorial modules as completed. When some significant changes or additions are made to the module after it has been marked as completed, the progress label below will change.
+          </p>
+          <p class="tutorial-progress"></p>
+        </div>
+
+        <p class='text-center pt-2'>
+          <button class='open-tutorial tutorial-action button mx-auto mb-4 d-block d-md-inline-block'>Open Tutorial</button>
+        </p>
+
+        <h2 id="license">License<div class='codicon codicon-warning license-warning'></div>
+          <div class='codicon codicon-error license-error'></div>
+        </h2>
+
+        <div class='activating'>
+          <p>Your license activation must be confirmed for your email address (<b class='registered-to'></b>). Please
+            confirm your online
+            activation request by following the instructions in the email we sent you.</p>
+
+          <p>If you have closed your editor since providing your email address, you will need to start Wallaby for your
+            license to be updated.</p>
+
+          <p>If you have not received an email from us, please check your junk/spam folders for an email from:
+            <b>hello@wallabyjs.com</b>.
+          </p>
+          <p class='text-center pt-2'>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Change
+              License</button>
+          </p>
+        </div>
+
+        <div class='activated'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. You are entitled
+            to
+            use the latest
+            version of Wallaby and all updates and upgrades until <b class='expiry-date'></b>.</p>
+          <p class='not-bundle-product'>If you would like purchase <a href="https://quokkajs.com/">Quokka.js</a>, you may <b>upgrade</b> your existing
+            license to <b>Wallaby.js + Quokka.js</b> which is cheaper than purchasing both products separately.</p>
+          <p class='text-center pt-2'>
+            <a class='not-bundle-product upgrade-url button license-action mx-auto mr-md-4 mb-4' href="">Upgrade
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Change
+              License</button>
+          </p>
+        </div>
+        <div class='open-source'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. You are entitled
+            to
+            use the latest
+            version of Wallaby on Open Source Projects.</p>
+          <p>If you would like to use Wallaby on closed-source personal or commercial projects, please <b>purchase a
+              license</b>.</p>
+          <p class='text-center pt-2'>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Wallaby</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='expiring'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. Your license
+            upgrade period expires in
+            <b><span class='days-until-expiry'></span></b>, on <b class='expiry-date'></b>. If you would like continue
+            to use the
+            latest version of Wallaby and receive updates and upgrades for another year, you may <b>renew your
+              license</b>.
+          </p>
+          <p class='text-center pt-2'>
+            <a class='renew-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Renew
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='expired'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. Your license
+            upgrade period has
+            expired and <b>you are no longer eligible for updates and upgrades</b>. If you would like to use the latest
+            version of Wallaby and receive updates
+            and upgrades for another year, you may <b>renew your license</b>.</p>
+          <p class='align-middle'>
+            <div id='suppressExpirationNotifications' class='checkbox-setting'>
+              <div class='custom-checkbox codicon codicon-check mr-1'></div>
+              <div class='text'>Suppress Expired License Reminders</div>
+            </div>
+          </p>
+          <p class='text-center pt-2'>
+            <a class='renew-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Renew
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='demo-license'>
+          <p>You are currently using Wallaby with a limited-time demonstration license that will <b>periodically
+              prompt</b> you to restart VS Code to continuing using Wallaby.</p>
+          <p>If you would like to try Wallaby without seeing a warning message and without having to periodically
+            restart VS Code, please
+            <b>request an extended trial license</b>. If you have already purchased a license, <b>please activate
+              it</b>. If you do not have a license, you may <b>purchase
+              a license</b> using our website. If you are using Wallaby with an open-source project, you may
+            <a href="https://wallabyjs.com/oss/?referrer=wsp">request an OSS license</a>.
+          </p>
+          <p class='text-center pt-2'>
+            <button
+              class='request-trial-action button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'>Request
+              Trial</button>
+            <button
+              class='activate-license button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+            <a class='purchase-url button license-action mx-auto mb-4 d-block d-md-inline-block' href="">Purchase
+              Wallaby</a>
+          </p>
+        </div>
+        <div class='trial-license'>
+          <p>You are currently using a fully-functional limited-time trial version of Wallaby. Your trial period
+            finishes in <b><span class='days-until-expiry'></span></b>, on <b class='expiry-date'></b>. If you would
+            like continue to use
+            Wallaby after your trial is over, you may <b>purchase a license</b>.</p>
+          <p class='text-center pt-2'>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='trial-demo-over'>
+          <p>Your Wallaby trial period has ended. If you would like to continue to use Wallaby, please <b>purchase a
+              license</b>. If you are still evaluating
+            Wallaby and need an extended trial license, please <a href="mailto:hello@wallabyjs.com">email us</a>.</p>
+          <p class='text-center pt-2'>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Wallaby</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='request-trial'>
+          <p class='header'>Request Extended Trial License</p>
+          <div class='d-flex mt-3 mb-2'>
+            <input id='request-trial-email' class='flex-grow-1' type='text' placeholder='Email Address'>
+            <button id='trial-submit' class='button ml-3'>Submit</button>
+            <button id='trial-cancel' class='button ml-3'>Cancel</button>
+            <div id='trial-spinner' class='ml-3 spinner-container'>
+              <div class='spinner-border' role="status"><span class="sr-only">Loading...</span></div>
+            </div>
+          </div>
+          <div id='trial-validation-error' class='smaller-text error mt-3 mb-2'>Invalid email address.</div>
+          <div id='trial-error' class='smaller-text error mt-3 mb-2'>Something went wrong processing your request.
+            Please <a class='error' href="mailto:hello@wallabyjs.com">send us an email</a> instead.</div>
+          <div id='trial-success' class='smaller-text mt-3 mb-2'>Your request has been processed. Please check your
+            email (including junk/spam folders).</div>
+        </div>
+
+        <div class='activate-license-details'>
+          <p>Your current <b class='product-type'></b> license is registered to <b class='registered-to'></b> with
+            updates
+            included until <b class='expiry-date'></b>.</p>
+        </div>
+        <div class='activate'>
+          <p class='header'>Activate License</p>
+          <p class='mt-3 description'>If you purchased a <b>personal license</b> or your company has assigned you a
+            license via their <a href="https://account.wallabyjs.com/?referrer=wsp">Wallaby Account</a>, then you may activate
+            Wallaby using either your email address OR your license key. If you activate using an email address, you will
+            be sent an email to confirm your activation.</p>
+          <div class='mt-3'>
+            <div class='grow-wrap w-100'>
+              <textarea id='activation-key' placeholder='Email Address OR License Key'></textarea>
+            </div>
+          </div>
+          <div id='activate-server-error' class='smaller-text error mt-3 mb-2'></div>
+          <div id='activate-success' class='smaller-text mt-3 mb-2'></div>
+          <div class='d-flex mt-3 mb-2'>
+            <div id='activate-validation-error' class='smaller-text error'></div>
+            <span class='flex-grow-1'>&nbsp;</span>
+            <button class='button ml-3' id='activation-submit'>Submit</button>
+            <button id='activation-cancel' class='button ml-3'>Cancel</button>
+            <div id='activation-spinner' class='spinner-container ml-3'>
+              <div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="settings">Settings</h2>
+        <div class='setting-item'>
+          <div id='startAutomatically' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Start Automatically</div>
+          </div>
+          <p class='description'>Starts Wallaby automatically if Wallaby was running with the folder or workspace was
+            last opened.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeaturedebugger' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Debugger Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to debug a test above each test declaration.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeaturetestStory' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Test Story Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to show the test story above each test declaration.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeatureprofiler' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Profiler Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to profiler a test above each test declaration.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeaturetestFilters' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Test Filters Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to add or remove a test to filtered tests above each test declaration.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeatureupdateSnapshots' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Update Snapshots Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to update snapshots above out of date snapshots.</p>
+        </div>
+
+        <div class='setting-item codelens'>
+          <div id='codeLensFeaturerunTest' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Enable Run Test Code Lens</div>
+          </div>
+          <p class='description'>Adds a code lens action to run a test above each test declaration.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='reportFailuresAsProblems' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Report Test Failures as Problems</div>
+          </div>
+          <p class='description'>Reports failing tests to the VS Code problems view.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='startViewStatusBar' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Display Start View Status Bar Indicator</div>
+          </div>
+          <p class='description'>Adds status bar text <b>Wallaby</b> to the left hand side of the VS Code status bar to
+            quickly access this screen.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='compactMessageOutput' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Compact Message Output</div>
+          </div>
+          <p class='description'>Minimizes the number of new line characters used to format Wallaby's output console
+            messages.</p>
+        </div>
+
+        <div class='more-settings'>
+          <p class='text-center pt-2'>
+            <button class='license-action button mb-4 otherSettings'>More Settings</button>
+          <p>
+        </div>
+
+        <h2 id="resources">Resources</h2>
+        <ul>
+          <li><a href="https://wallabyjs.com/?referrer=wsp">Website</a></li>
+          <li><a href="https://wallabyjs.com/docs/?referrer=wsp">Documentation</a></li>
+          <li><a href="https://github.com/wallabyjs/public/blob/master/CHANGELOG.md">Changelog</a></li>
+          <li><a href="https://github.com/wallabyjs/public/blob/master/EULA.md">End User License Agreement</a></li>
+        </ul>
+
+        <h2 id="contact" class='contact-details'>Contact</h2>
+        <p class='contact-details'>
+        <ul class='contact contact-details'>
+          <li>
+            <a class='contact' href="mailto:hello@wallabyjs.com">
+              <span class='icon'>
+                <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Email</span>
+            </a>
+          </li>
+          <li>
+            <a class='issue' href="https://github.com/wallabyjs/public/issues">
+              <span class='icon'>
+                <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Issues</span>
+            </a>
+          </li>
+          <li>
+            <a class='twitter' href="https://twitter.com/wallabyjs">
+              <span class='icon'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                  <path class="cls-2"
+                    d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class='discord' href="https://wallabyjs.com/chat/?referrer=wsp">
+              <span class='icon'>
+                <svg viewBox="30 20 220 210" version="1.1" aria-hidden="true">
+                  <path class="st0"
+                    d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z">
+                  </path>
+                  <path class="st0"
+                    d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Discord</span>
+            </a>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class='menu'>
+        <div class='menu-items'>
+          <a class='menu-item contact' href="mailto:hello@wallabyjs.com">
+            <span class='menu-item-icon'>
+              <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Email</span>
+          </a>
+          <a class='menu-item issue' href="https://github.com/wallabyjs/public/issues">
+            <span class='menu-item-icon'>
+              <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Issues</span>
+          </a>
+          <a class='menu-item twitter' href="https://twitter.com/wallabyjs">
+            <span class='menu-item-icon'>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path class="cls-2"
+                  d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Twitter</span>
+          </a>
+          <a class='menu-item discord' href="https://wallabyjs.com/chat/?referrer=wsp">
+            <span class='menu-item-icon'>
+              <svg viewBox="30 20 220 210" version="1.1" aria-hidden="true">
+                <path class="st0"
+                  d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z">
+                </path>
+                <path class="st0"
+                  d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Discord</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="${root}/media/jquery-3.5.1.slim.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/popper.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/bootstrap.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/gifffer.js" nonce="${nonce}"></script>
+  <script src="${root}/media/main.js" nonce="${nonce}"></script>
+</body>
+
+</html>

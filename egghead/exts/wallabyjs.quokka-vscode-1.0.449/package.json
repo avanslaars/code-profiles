@@ -1,0 +1,1197 @@
+{
+	"name": "quokka-vscode",
+	"displayName": "Quokka.js",
+	"description": "JavaScript and TypeScript playground in your editor.",
+	"version": "1.0.449",
+	"publisher": "WallabyJs",
+	"homepage": "http://quokkajs.com",
+	"bugs": {
+		"url": "https://github.com/wallabyjs/quokka/issues"
+	},
+	"repository": {},
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"keywords": [
+		"scraptchpad",
+		"playground",
+		"JavaScript",
+		"TypeScript",
+		"REPL"
+	],
+	"categories": [
+		"Debuggers",
+		"Testing",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./index",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true,
+			"description": ""
+		}
+	},
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "wallaby",
+					"title": "Wallaby Tools",
+					"icon": "images/logo.svg"
+				}
+			]
+		},
+		"views": {
+			"wallaby": [
+				{
+					"id": "quokkaValueExplorer",
+					"name": "Quokka Value Explorer",
+					"when": "quokka.startedAtLeastOnce"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "quokka.createFile",
+				"title": "New File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.newJavaScript",
+				"title": "JavaScript File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.newTypeScript",
+				"title": "TypeScript File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.newRecentInteractive",
+				"title": "From Recent / Interactive Example",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.createJavaScriptFile",
+				"title": "New JavaScript File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.createTypeScriptFile",
+				"title": "New TypeScript File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.openStartView",
+				"title": "Open Start View",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.showOutput",
+				"title": "Show Output",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.showInstrumentedFile",
+				"title": "Show Instrumented Code",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.makeQuokkaFromExistingFile",
+				"title": "Start on Current File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.toggle",
+				"title": "Toggle (Start/Stop) on Current File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.runOnSave",
+				"title": "Run on save for Current File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.runOnce",
+				"title": "Run once for Current File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.stopCurrent",
+				"title": "Stop Current",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.stopAll",
+				"title": "Stop All",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.installMissingPackageToProject",
+				"title": "Install Missing Package into Project",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.installMissingPackageToQuokka",
+				"title": "Install Missing Package only for Quokka File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.installQuokkaPlugin",
+				"title": "Install Quokka Plugin",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.addImport",
+				"title": "Add Import",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.addRequire",
+				"title": "Add Require",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.showValue",
+				"title": "Show Value",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.copyValue",
+				"title": "Copy Value",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.goToLineInQuokkaFile",
+				"title": "Focus Active Quokka File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.showLicense",
+				"title": "Manage License Key",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.switchToPro",
+				"title": "Switch to 'Pro' Edition",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.switchToCommunity",
+				"title": "Switch to 'Community' Edition",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.selectWorkspaceFolder",
+				"title": "Select Workspace Folder",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.copyExpressionPath",
+				"title": "Copy Path",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.copyExpressionData",
+				"title": "Copy Data",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.profile",
+				"title": "Profile",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/profile.dark.svg",
+					"light": "images/profile.light.svg"
+				}
+			},
+			{
+				"command": "quokka.clearValue",
+				"title": "Clear Value",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.clearFileValues",
+				"title": "Clear File Values",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.enableShowValueOnSelection",
+				"title": "Toggle Show Value On Selection",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/showValueOnSelectionDisabled.dark.svg",
+					"light": "images/showValueOnSelectionDisabled.light.svg"
+				}
+			},
+			{
+				"command": "quokka.disableShowValueOnSelection",
+				"title": "Toggle Show Value On Selection",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/showValueOnSelectionEnabled.dark.svg",
+					"light": "images/showValueOnSelectionEnabled.light.svg"
+				},
+				"when": "!quokka.autoLogEnabled"
+			},
+			{
+				"command": "quokka.enableShowSingleInlineValue",
+				"title": "Show Last Selected Value Only",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/showSingleInlineValueDisabled.dark.svg",
+					"light": "images/showSingleInlineValueDisabled.light.svg"
+				}
+			},
+			{
+				"command": "quokka.disableShowSingleInlineValue",
+				"title": "Show All Selected Values",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/showSingleInlineValueEnabled.dark.svg",
+					"light": "images/showSingleInlineValueEnabled.light.svg"
+				}
+			},
+			{
+				"command": "quokka.viewRecentFiles",
+				"title": "View Recent Files",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.runRecentFile",
+				"title": "Run Recent File",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.removeRecentFiles",
+				"title": "Remove Recent Files",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.disableAutoLog",
+				"title": "Toggle Auto Log (Disable)",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.enableAutoLog",
+				"title": "Toggle Auto Log (Enable)",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.revealInValueExplorer",
+				"title": "Reveal in Value Explorer",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.stopShowingOutputCodeLens",
+				"title": "Stop Displaying Code Lens in Output",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.editSessionSettings",
+				"title": "Edit Current Quokka Session Settings",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.debug",
+				"title": "Start Time Machine On The Current Line",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.debugAutoPlay",
+				"title": "Start Time Machine With Auto Play",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.playTraceNextStep",
+				"title": "Step Into",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-into.dark.svg",
+					"light": "images/debug-step-into.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTracePrevStep",
+				"title": "Step Back Into",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-into-back.dark.svg",
+					"light": "images/debug-step-into-back.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceForwardToSelection",
+				"title": "Run to Active Line",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-continue.dark.svg",
+					"light": "images/debug-continue.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceBackwardToSelection",
+				"title": "Run Back to Active Line",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-continue-back.dark.svg",
+					"light": "images/debug-continue-back.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceForwardToBreakpoint",
+				"title": "Run to Breakpoint",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-continue-breakpoint.dark.svg",
+					"light": "images/debug-continue-breakpoint.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceBackwardToBreakpoint",
+				"title": "Run Back to Breakpoint",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-continue-back-breakpoint.dark.svg",
+					"light": "images/debug-continue-back-breakpoint.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceNextStepOver",
+				"title": "Step Over",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-over.dark.svg",
+					"light": "images/debug-step-over.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTracePrevStepOver",
+				"title": "Step Back Over",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-over-back.dark.svg",
+					"light": "images/debug-step-over-back.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTraceNextStepOut",
+				"title": "Step Out",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-out.dark.svg",
+					"light": "images/debug-step-out.light.svg"
+				}
+			},
+			{
+				"command": "quokka.playTracePrevStepOut",
+				"title": "Step Back Out",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/debug-step-out-back.dark.svg",
+					"light": "images/debug-step-out-back.light.svg"
+				}
+			},
+			{
+				"command": "quokka.openCallStackFrame",
+				"title": "Open Call Stack Frame",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.viewCallStack",
+				"title": "View Call Stack",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.hideCallStack",
+				"title": "Hide Call Stack",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.stopTraceNavigation",
+				"title": "Stop Time Machine",
+				"category": "Quokka.js",
+				"icon": {
+					"dark": "images/stop.dark.svg",
+					"light": "images/stop.light.svg"
+				}
+			},
+			{
+				"command": "quokka.revealTraceStep",
+				"title": "Reveal Trace Step",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.autoPlayCode",
+				"title": "Auto Play Code",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.pauseCodeExecution",
+				"title": "Pause Code Execution",
+				"category": "Quokka.js"
+			},
+			{
+				"command": "quokka.viewCodeStory",
+				"title": "View Code Story",
+				"category": "Quokka.js"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "quokka.createFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.newJavaScript",
+					"when": "false"
+				},
+				{
+					"command": "quokka.newTypeScript",
+					"when": "false"
+				},
+				{
+					"command": "quokka.newRecentInteractive",
+					"when": "false"
+				},
+				{
+					"command": "quokka.createJavaScriptFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.createTypeScriptFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.showInstrumentedFile",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.makeQuokkaFromExistingFile",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.toggle",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.runOnSave",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.runOnce",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.stopCurrent",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.stopAll",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.installMissingPackageToProject",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.installMissingPackageToQuokka",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.showValue",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.copyValue",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.goToLineInQuokkaFile",
+					"when": "!quokka.isLiveShareClient && quokka.hasActiveSession"
+				},
+				{
+					"command": "quokka.selectWorkspaceFolder",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.installQuokkaPlugin",
+					"when": "false"
+				},
+				{
+					"command": "quokka.addImport",
+					"when": "false"
+				},
+				{
+					"command": "quokka.addRequire",
+					"when": "false"
+				},
+				{
+					"command": "quokka.copyExpressionPath",
+					"when": "false"
+				},
+				{
+					"command": "quokka.copyExpressionData",
+					"when": "false"
+				},
+				{
+					"command": "quokka.profile",
+					"when": "!quokka.isLiveShareClient && quokka.isProfilingEnabled && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.clearValue",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.clearFileValues",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.enableShowValueOnSelection",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.showValueOnSelectionEnabled && !quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.disableShowValueOnSelection",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.showValueOnSelectionEnabled && !quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.enableShowSingleInlineValue",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.showSingleInlineValueEnabled && !quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.disableShowSingleInlineValue",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.showSingleInlineValueEnabled && !quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.viewRecentFiles",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.runRecentFile",
+					"when": "false"
+				},
+				{
+					"command": "quokka.removeRecentFiles",
+					"when": "false"
+				},
+				{
+					"command": "quokka.disableAutoLog",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.enableAutoLog",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.autoLogEnabled"
+				},
+				{
+					"command": "quokka.revealInValueExplorer",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				},
+				{
+					"command": "quokka.stopShowingOutputCodeLens",
+					"when": "false"
+				},
+				{
+					"command": "quokka.debug",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.traceBeingNavigated"
+				},
+				{
+					"command": "quokka.editSessionSettings",
+					"when": "quokka.isPro && activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.traceBeingNavigated"
+				},
+				{
+					"command": "quokka.debugAutoPlay",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.traceBeingNavigated"
+				},
+				{
+					"command": "quokka.playTraceNextStep",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTracePrevStep",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceForwardToSelection",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceBackwardToSelection",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceForwardToBreakpoint",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceBackwardToBreakpoint",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceNextStepOver",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTracePrevStepOver",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTraceNextStepOut",
+					"when": "false"
+				},
+				{
+					"command": "quokka.playTracePrevStepOut",
+					"when": "false"
+				},
+				{
+					"command": "quokka.openCallStackFrame",
+					"when": "false"
+				},
+				{
+					"command": "quokka.viewCallStack",
+					"when": "false"
+				},
+				{
+					"command": "quokka.hideCallStack",
+					"when": "false"
+				},
+				{
+					"command": "quokka.stopTraceNavigation",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated"
+				},
+				{
+					"command": "quokka.revealTraceStep",
+					"when": "false"
+				},
+				{
+					"command": "quokka.autoPlayCode",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed"
+				},
+				{
+					"command": "quokka.pauseCodeExecution",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && quokka.traceBeingAutoPlayed"
+				},
+				{
+					"command": "quokka.viewCodeStory",
+					"when": "quokka.isCodeStoryEnabled && quokka.isPro && activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "quokka.copyExpressionPath",
+					"when": "viewItem =~ /QuokkaAllowToCopyPath/"
+				},
+				{
+					"command": "quokka.copyExpressionData",
+					"when": "viewItem =~ /QuokkaAllowToCopyData/"
+				}
+			],
+			"file/newFile": [
+				{
+					"command": "quokka.newJavaScript",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.newTypeScript",
+					"when": "!quokka.isLiveShareClient"
+				},
+				{
+					"command": "quokka.newRecentInteractive",
+					"when": "!quokka.isLiveShareClient"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "quokka.playTraceBackwardToSelection",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-998"
+				},
+				{
+					"command": "quokka.playTracePrevStepOut",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-997"
+				},
+				{
+					"command": "quokka.playTracePrevStep",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-996"
+				},
+				{
+					"command": "quokka.playTracePrevStepOver",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-995"
+				},
+				{
+					"command": "quokka.stopTraceNavigation",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-994"
+				},
+				{
+					"command": "quokka.playTraceNextStepOver",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-993"
+				},
+				{
+					"command": "quokka.playTraceNextStep",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-992"
+				},
+				{
+					"command": "quokka.playTraceNextStepOut",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-991"
+				},
+				{
+					"command": "quokka.playTraceForwardToSelection",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-990"
+				},
+				{
+					"command": "quokka.playTraceBackwardToBreakpoint",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && quokka.hasAnyEnabledBreakpointsInActiveEditor && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && quokka.hasAnyEnabledBreakpointsInActiveEditor && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-989"
+				},
+				{
+					"command": "quokka.playTraceForwardToBreakpoint",
+					"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && quokka.hasAnyEnabledBreakpointsInActiveEditor && !quokka.traceBeingAutoPlayed && resourceScheme != quokka-code-timeline || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && quokka.hasAnyEnabledBreakpointsInActiveEditor && !quokka.traceBeingAutoPlayed && resourceScheme == quokka-code-timeline",
+					"group": "navigation@-988"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "quokka.makeQuokkaFromExistingFile",
+				"key": "ctrl+k q",
+				"mac": "cmd+k q",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.createJavaScriptFile",
+				"key": "ctrl+k j",
+				"mac": "cmd+k j",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.createTypeScriptFile",
+				"key": "ctrl+k t",
+				"mac": "cmd+k t",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.createFile",
+				"key": "ctrl+k l",
+				"mac": "cmd+k l",
+				"when": "!terminalFocus && !quokka.isLiveShareClient"
+			},
+			{
+				"command": "quokka.stopCurrent",
+				"key": "ctrl+k e",
+				"mac": "cmd+k s",
+				"when": "!terminalFocus && !quokka.isLiveShareClient && quokka.hasActiveSession"
+			},
+			{
+				"command": "quokka.showValue",
+				"key": "ctrl+k v",
+				"mac": "cmd+k v",
+				"when": "!terminalFocus && !quokka.isLiveShareClient && quokka.hasActiveSession"
+			},
+			{
+				"command": "quokka.copyValue",
+				"key": "ctrl+k x",
+				"mac": "cmd+k x",
+				"when": "!terminalFocus && !quokka.isLiveShareClient && quokka.hasActiveSession"
+			},
+			{
+				"command": "quokka.installMissingPackageToQuokka",
+				"key": "ctrl+k i",
+				"mac": "cmd+k i",
+				"when": "!terminalFocus && !quokka.isLiveShareClient && quokka.hasActiveSession"
+			},
+			{
+				"command": "quokka.clearValue",
+				"key": "Escape",
+				"mac": "Escape",
+				"when": "quokka.isActiveEditorRunningQuokka && quokka.lineHasRemovableInlineValues && editorTextFocus && !suggestWidgetVisible && !findWidgetVisible && !renameInputVisible && !referenceSearchVisible && !inReferenceSearchEditor && !quickFixWidgetVisible && !parameterHintsVisible"
+			},
+			{
+				"command": "quokka.clearFileValues",
+				"key": "Escape Escape",
+				"mac": "Escape Escape",
+				"when": "quokka.isActiveEditorRunningQuokka && !quokka.lineHasRemovableInlineValues && quokka.fileHasRemovableInlineValues && editorTextFocus && !suggestWidgetVisible && !findWidgetVisible && !renameInputVisible && !referenceSearchVisible && !inReferenceSearchEditor && !quickFixWidgetVisible && !parameterHintsVisible && !editorHasSelection"
+			},
+			{
+				"command": "quokka.stopTraceNavigation",
+				"key": "shift+f5",
+				"mac": "shift+f5",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.debug",
+				"key": "shift+f5",
+				"mac": "shift+f5",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.debugAutoPlay",
+				"key": "alt+shift+f5",
+				"mac": "alt+shift+f5",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && !quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceNextStep",
+				"key": "f11",
+				"mac": "f11",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceForwardToSelection",
+				"key": "f5",
+				"mac": "f5",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceForwardToBreakpoint",
+				"key": "f8",
+				"mac": "f8",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceNextStepOver",
+				"key": "f10",
+				"mac": "f10",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceNextStepOut",
+				"key": "shift+f11",
+				"mac": "shift+f11",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTracePrevStep",
+				"key": "ctrl+f11",
+				"mac": "ctrl+f11",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceBackwardToSelection",
+				"key": "ctrl+f5",
+				"mac": "ctrl+f5",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTraceBackwardToBreakpoint",
+				"key": "ctrl+f8",
+				"mac": "ctrl+f8",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTracePrevStepOver",
+				"key": "ctrl+f10",
+				"mac": "ctrl+f10",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			},
+			{
+				"command": "quokka.playTracePrevStepOut",
+				"key": "ctrl+shift+f11",
+				"mac": "ctrl+shift+f11",
+				"when": "activeEditor && !quokka.isLiveShareClient && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode || activeEditor && !quokka.isLiveShareClient && quokka.traceBeingNavigated && !inDebugMode && resourceScheme == quokka-code-timeline"
+			}
+		],
+		"languages": [
+			{
+				"id": "quokka-output"
+			},
+			{
+				"id": "quokka-recent"
+			},
+			{
+				"id": "quokka-timeline"
+			}
+		],
+		"grammars": [
+			{
+				"language": "quokka-output",
+				"scopeName": "quokka.output",
+				"path": "./quokka-output.tmGrammer.json"
+			},
+			{
+				"language": "quokka-recent",
+				"scopeName": "source.quokka-recent",
+				"path": "./quokka-recent.tmLanguage.json"
+			},
+			{
+				"language": "quokka-timeline",
+				"scopeName": "source.quokka-timeline",
+				"path": "./quokka-timeline.tmGrammer.json"
+			}
+		],
+		"configurationDefaults": {
+			"[quokka-output]": {
+				"editor.unicodeHighlight.invisibleCharacters": false,
+				"editor.unicodeHighlight.excludedCharacters": [],
+				"editor.unicodeHighlight.nonBasicASCII": false,
+				"editor.unicodeHighlight.ambiguousCharacters": false,
+				"editor.unicodeHighlight.includeComments": false
+			},
+			"[quokka-recent]": {
+				"editor.unicodeHighlight.invisibleCharacters": false,
+				"editor.unicodeHighlight.excludedCharacters": [],
+				"editor.unicodeHighlight.nonBasicASCII": false,
+				"editor.unicodeHighlight.ambiguousCharacters": false,
+				"editor.unicodeHighlight.includeComments": false
+			},
+			"[quokka-timeline]": {
+				"editor.unicodeHighlight.invisibleCharacters": false,
+				"editor.unicodeHighlight.excludedCharacters": [],
+				"editor.unicodeHighlight.nonBasicASCII": false,
+				"editor.unicodeHighlight.ambiguousCharacters": false,
+				"editor.unicodeHighlight.includeComments": false
+			}
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Quokka configuration",
+			"properties": {
+				"quokka.suppressExpirationNotifications": {
+					"description": "Stop Quokka expiring license update reminders",
+					"type": "boolean",
+					"default": false
+				},
+				"quokka.showOutputOnStart": {
+					"description": "Show Quokka output window on start up",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.colorizeOutput": {
+					"description": "Colorize Quokka output",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.suppressGlyphMarginNotifications": {
+					"description": "Suppress Quokka Glyph Margin Notifications",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.lightTheme.log.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Light Theme Log",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "#0000ff",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.lightTheme.system.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Light Theme System Log",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "rgb(153, 153, 153)",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.lightTheme.error.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Light Theme Error",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "#c80000",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.darkTheme.log.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Dark Theme Log",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "rgba(86, 156, 214, 1)",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.darkTheme.system.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Dark Theme System Log",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "rgb(153, 153, 153)",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.darkTheme.error.decorationAttachmentRenderOptions": {
+					"description": "Override Quokka Dark Theme Error",
+					"type": "object",
+					"default": {
+						"border": null,
+						"borderColor": null,
+						"fontStyle": null,
+						"fontWeight": null,
+						"textDecoration": null,
+						"color": "#fe536a",
+						"backgroundColor": null,
+						"margin": "1.2em",
+						"width": null,
+						"height": null
+					}
+				},
+				"quokka.colors": {
+					"description": "Quokka gutter indicators colors (requires a restart after change)",
+					"type": "object",
+					"default": {
+						"covered": "#62b455",
+						"errorPath": "#ffa0a0",
+						"errorSource": "#fe536a",
+						"notCovered": "#cccccc",
+						"partiallyCovered": "#d2a032"
+					}
+				},
+				"quokka.compactMessageOutput": {
+					"description": "Minimize the number of new line characters between output console messages",
+					"type": "boolean",
+					"default": false
+				},
+				"quokka.automaticRestart": {
+					"description": "Automatically start on file open if Quokka was last running when the file was closed",
+					"type": "boolean",
+					"default": false
+				},
+				"quokka.automaticStartRegex": {
+					"description": "Automatically start on file open when the file path matches the regular expression",
+					"type": "string",
+					"default": ""
+				},
+				"quokka.startViewStatusBar": {
+					"description": "Display Quokka Start View status bar indicator",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.showStartViewOnFeatureRelease": {
+					"description": "Display information about new features when they are released",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.showCodeLensInOutputChannel": {
+					"description": "Display code lens in Quokka output",
+					"type": "boolean",
+					"default": true
+				},
+				"quokka.codeAutoPlayDelay": {
+					"description": "Code auto-play delay in milliseconds",
+					"type": "number",
+					"default": 1000
+				},
+				"quokka.untrustedWorkspaceBehavior": {
+					"markdownDescription": "Specifies whether Quokka is allowed to run in an [untrusted workspace](https://code.visualstudio.com/docs/editor/workspace-trust).",
+					"type": "string",
+					"default": "Prompt to allow",
+					"enum": [
+						"Prompt to allow",
+						"Never allow",
+						"Always allow"
+					],
+					"enumDescriptions": [
+						"Prompt for confirmation before starting Quokka in an untrusted workspace.",
+						"Never start Quokka in an untrusted workspace.",
+						"Always start Quokka (without prompts) in an untrusted workspace."
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build": "npm run test && node ./node_modules/grunt/bin/grunt",
+		"pub": "node ./node_modules/grunt/bin/grunt bump-only && npm run build && vsce publish && vsce package && node ./node_modules/grunt/bin/grunt publish-complete",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"test": "npm run compile && jest",
+		"release": "node ./docker/run.js"
+	},
+	"dependencies": {
+		"adm-zip": "0.4.13",
+		"tslib": "^1.9.3",
+		"vsls": "^1.0.4753"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.8",
+		"@babel/preset-env": "^7.15.8",
+		"@babel/preset-typescript": "^7.15.0",
+		"@types/adm-zip": "^0.4.34",
+		"@types/jest": "^27.0.2",
+		"@types/node": "^10.17.24",
+		"@types/sinon": "^5.0.5",
+		"@types/vscode": "^1.53.0",
+		"@typescript-eslint/eslint-plugin": "^4.22.0",
+		"@typescript-eslint/parser": "^4.22.0",
+		"babel-jest": "^27.3.1",
+		"eslint": "^7.24.0",
+		"eslint-plugin-jest": "^24.3.6",
+		"grunt": "*",
+		"grunt-browserify": "*",
+		"grunt-bump": "0.0.16",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-compress": "^0.12.0",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-uglify-es": "*",
+		"grunt-ts": "^6.0.0-beta.16",
+		"jest": "^27.3.1",
+		"lodash": "*",
+		"sinon": "^7.0.0",
+		"typescript": "^3.9.3",
+		"vsce": "^1.46.0"
+	},
+	"optionalDependencies": {
+		"aws-sdk": "^2.353.0",
+		"keytar": "^4.10.0"
+	},
+	"__metadata": {
+		"id": "aae0701b-111f-49c1-9000-abd37a442f28",
+		"publisherId": "9e43bb4e-4318-4e59-b5c2-df1109a963dd",
+		"publisherDisplayName": "Wallaby.js",
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1646830284461
+	}
+}

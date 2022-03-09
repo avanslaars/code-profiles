@@ -1,0 +1,51 @@
+/*!
+	 * Determine if an object is a Buffer
+	 *
+	 * @author   Feross Aboukhadijeh <https://feross.org>
+	 * @license  MIT
+	 */
+
+/*!
+	 * is-extglob <https://github.com/jonschlinkert/is-extglob>
+	 *
+	 * Copyright (c) 2014-2016, Jon Schlinkert.
+	 * Licensed under the MIT License.
+	 */
+
+/*!
+	 * is-glob <https://github.com/jonschlinkert/is-glob>
+	 *
+	 * Copyright (c) 2014-2017, Jon Schlinkert.
+	 * Released under the MIT License.
+	 */
+
+/*!
+	 * repeat-string <https://github.com/jonschlinkert/repeat-string>
+	 *
+	 * Copyright (c) 2014-2015, Jon Schlinkert.
+	 * Licensed under the MIT License.
+	 */
+
+/**
+	   * @license
+	   * Copyright Google Inc. All Rights Reserved.
+	   *
+	   * Use of this source code is governed by an MIT-style license that can be
+	   * found in the LICENSE file at https://angular.io/license
+	   */
+
+/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+
+/**
+	 * @license
+	 * Copyright Google LLC All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */

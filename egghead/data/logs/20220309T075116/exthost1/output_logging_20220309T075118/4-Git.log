@@ -1,0 +1,18 @@
+[2022-03-09T12:51:22.985Z] Validating found git in: /usr/bin/git
+[2022-03-09T12:51:23.000Z] Using git 2.32.0 (Apple Git-132) from /usr/bin/git
+[2022-03-09T12:51:23.017Z] > git rev-parse --git-dir [6ms]
+[2022-03-09T12:51:23.019Z] Open repository: /Users/avanslaars/projects/my-awesome-blog
+[2022-03-09T12:51:23.035Z] > git symbolic-ref --short HEAD [7ms]
+[2022-03-09T12:51:23.042Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [6ms]
+[2022-03-09T12:51:23.049Z] > git remote --verbose [6ms]
+[2022-03-09T12:51:23.050Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+[2022-03-09T12:51:23.058Z] > git config --get commit.template [7ms]
+[2022-03-09T12:56:21.175Z] > git ls-files --stage -- /Users/avanslaars/projects/my-awesome-blog/pages/api/hello.js [7ms]
+[2022-03-09T12:56:21.183Z] > git cat-file -s 9987aff4c39a90f03750ee18f79941193eb55da2 [7ms]
+[2022-03-09T12:56:51.372Z] > git ls-files --stage -- /Users/avanslaars/projects/my-awesome-blog/pages/api/hello.js [12ms]
+[2022-03-09T12:56:51.382Z] > git cat-file -s 9987aff4c39a90f03750ee18f79941193eb55da2 [9ms]
+[2022-03-09T12:56:58.988Z] > git symbolic-ref --short HEAD [10ms]
+[2022-03-09T12:56:58.999Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [9ms]
+[2022-03-09T12:56:59.008Z] > git remote --verbose [8ms]
+[2022-03-09T12:56:59.008Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+[2022-03-09T12:56:59.016Z] > git config --get commit.template [6ms]

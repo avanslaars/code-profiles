@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; font-src ${cspSource}; style-src ${cspSource} 'self' 'unsafe-inline'; img-src ${cspSource} https: data: vscode-webview:; script-src 'nonce-${nonce}';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="${root}/media/bootstrap.min.css">
+  <link rel="stylesheet" href="${root}/media/main.css">
+  <link rel="stylesheet" href="${root}/media/codicon.css">
+
+  <title>Quokka</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id='main' class="page-contents">
+      <div class='logo'>
+        <a href="https://quokkajs.com/?referrer=qsp">
+          <img src="${root}/images/logo.svg" />
+          <span>Quokka</span>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav-items mr-5 pr-5">
+          <li data-section='welcome' class="active">Welcome</li>
+          <li data-section='whatsnew'>What's New</li>
+          <li data-section='license'>License<div class='codicon codicon-warning license-warning'></div>
+            <div class='codicon codicon-error license-error'></div>
+          </li>
+          <li data-section='settings'>Settings</li>
+          <li data-section='resources'>Resources</li>
+          <li data-section='contact' class='contact-details'>Contact</li>
+        </ul>
+      </div>
+      <div class='content'>
+        <h2 id="welcome">Welcome</h2>
+        <div class='community-edition'>
+          <p>Thanks for installing Quokka! You are currently using <b>Quokka.js 'Community' edition</b> (free).
+            <b>Quokka.js 'PRO' edition</b> is also available and provides some more advanced features.
+          </p>
+          <div>
+            <div id='country-discount-spinner' class='spinner-container text-center pb-2'>
+              <div class='spinner-border' role="status"><span class="sr-only">Loading...</span></div>
+            </div>
+          </div>
+          <p class='country-discount-section'>If you don't already have <b>Quokka 'PRO' edition</b> and want to
+            purchase,
+            we wanted to let you know that <b>Quokka 'PRO' edition</b> is currently <b>discounted by <span
+                class='discount-amount'></span>%</b> for people in <span class='discount-country'></span>.</p>
+          <p class='sale-section'>If you don't already have <b>Quokka 'PRO' edition</b> and want to
+                purchase,
+                we wanted to let you know that <b>Quokka 'PRO' edition</b> is currently <b>discounted by <span class='sale-discount'></span>% for one week only</b>.</p>
+          <div class='text-center pt-2'>
+            <button
+              class='request-trial-action-offscreen button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'>Try
+              'PRO' Now</button>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Quokka 'PRO'</a>
+            <a class='button license-action mx-auto mb-4' href="https://quokkajs.com/pro/?referrer=qsp">Read More</a>
+          </div>
+        </div>
+        <p>If you are new to Quokka.js, you may launch our interactive demonstration Quokka file and see various
+          features in action.</p>
+        <p class='text-center pt-2'>
+          <button class='launch-demo button mb-4'>Launch Interactive Demo</button>
+        <p>
+        <p>Alternatively, you may watch this video on YouTube, which also demonstrates many Quokka features:</p>
+        <div class="webinar"><a href="https://www.youtube.com/watch?v=f_sEWa5hA0Q"><img class='image-border'
+              src="${root}/media/youtube.png" title='Click to watch the Quokka video on YouTube' /></a></div>
+
+        <div class='d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-5'>
+          <h2 id="whatsnew" class="flex-grow-1">What's New</h2>
+          <div id='showStartViewOnFeatureRelease' class='checkbox-setting whatsnew pt-2 pt-sm-0'>
+            <div class='text mr-0 mr-sm-2'>Notify about new features</div>
+            <div class='custom-checkbox codicon codicon-check'></div>
+          </div>
+        </div>
+
+        <p>The <b>What’s New</b> section details recent major features and changes. For older news or more details about
+          minor updates and changes, please refer to our <a
+            href="https://quokkajs.com/whatsnew/?referrer=qsp">website</a>. We have some exciting new features under
+          development, stay tuned!</p>
+        <p class='feature-not-available'>The <span class='codicon codicon-warning d-inline-block'></span> icon beside
+          a feature indicates that this feature is not available to you because it is either a Quokka 'PRO' feature or
+          because your license has expired.
+          To try a feature that is not available, you may renew your existing license or else request a temporary trial
+          license.
+        </p>
+        <!--
+          "data-whats-new-version"
+
+            the version to display the feature for when "What's New is launched",
+            if previous verison < new-version then feature will display
+
+          "data-build-date"
+
+            the build date of the Quokka extension required for this feature
+        -->
+
+        <!--
+          ********************* IMPORTANT NOTE **********************
+          ********************* IMPORTANT NOTE **********************
+          ********************* IMPORTANT NOTE **********************
+
+          Next "data-whats-new-version" number is "5" because of RN/CN custom messages...
+
+          REMOVE this note after version "5" is released
+
+           ********************* IMPORTANT NOTE **********************
+           ********************* IMPORTANT NOTE **********************
+           ********************* IMPORTANT NOTE **********************
+        -->
+        <div class='feature' data-whats-new-version='3' data-build-date='2022-01-26' data-display-from='2022-01-26'>
+          <h4>Code Stories <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle" title="Quokka.js Professional Edition Feature">PRO</a></h4>
+
+          <p>
+            Quokka's new <a href="https://quokkajs.com/docs/?referrer=qsp#code-story">Code Story</a> feature (for <a href="https://quokkajs.com/pro/?referrer=qsp">Quokka Pro</a>) provides a unique and highly efficient way of
+            inspecting what your code is doing in a single continuous view. The viewer is fully integrated with Quokka's Time Machine, which means you can simply select a variable or expression to see its runtime value.
+            Seeing the executed code displayed in a single continuous view really cuts down on context switching that you may experience in a traditional debugger experience.
+          </p>
+
+          <p class="whatsnew-image">
+            <img data-gifffer="${root}/media/quokka-code-story.gif" class="loaded" />
+          </p>
+
+          <p>
+            Once Quokka has started on a file, the Code Story can be launched using the <span class='code-text font-bold highlighted-text'>View Code Story</span> command. The <span class='code-text font-bold highlighted-text'>View Code Story</span> command will start also
+            Quokka's Time Machine if it is not already started. The Code Story can also be launched using the <span class='code-text font-bold highlighted-text'>View Code Story</span>
+            code lens in the Quokka output header code lens after starting the Time Machine. Quokka's Time Machine features are also fully available when a Code Story is displayed.
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='2' data-build-date='2021-11-17'>
+          <h4>Time Machine</h4>
+
+          <p>
+            We are thrilled to announce the latest big Quokka feature - <a href="https://quokkajs.com/docs/?referrer=qsp#debugger">Time Machine for JavaScript and TypeScript</a>. The time machine provides a turn-key ergonomic <b>time travel debugging experience</b>, including auto play mode, that unlike a general purpose debugger
+          was built for quick experimentation and instant feedback loop.
+          </p>
+
+          <p class="whatsnew-image">
+            <img data-gifffer="${root}/media/vsc-debugger.gif" class="loaded" />
+          </p>
+
+          <p>
+            The time machine can be started from any line of code with a
+            single click, there are no special steps to perform to start using it, even breakpoints are optional.
+            You can step
+            forward and backward through your code to understand the conditions that led to a specific behaviour. To
+            inspect the
+            runtime value of a variable, you may simply select it.
+          </p>
+
+          <p>
+            In addition to Quokka Community time machine features, <a href="https://quokkajs.com/pro/?referrer=qsp">Quokka Pro</a> allows you to edit your code and continue
+          your debug session with the modified changes.
+          </p>
+
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Improved Output Highlighting</h4>
+
+          <p>
+            Previously Quokka would highlight all logged values in Output pane with the same color.
+            For large objects or arrays this could make it slightly hard to read.
+            Quokka now recognizes built-in types such as strings / numbers / objects / arrays and highlights them accordingly.
+            In addition, we minimized the number of hidden characters in the output to make select & copy process easier.
+          </p>
+
+          <p class="whatsnew-image" style="height: 225px"><img width="500" class="lazy" data-src="https://quokkajs.com/assets/img/vsc-output-highlight.png"/></p>
+
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>CPU Profiler <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></h4>
+
+          <p>Quokka's <a href="https://quokkajs.com/docs/?referrer=qsp#cpu-profiler">CPU Profiler</a> is our first big
+            feature of 2021 and is expected to be a game changer for many of our users. The CPU Profiler allows you to
+            quickly and easily get the CPU Profile
+            of your code to analyze its runtime performance. No configuration is required, one simple click and you will
+            see the CPU profile.</p>
+
+          <p class="whatsnew-image" style="height: 460px;"><img class="lazy animated" data-src="https://quokkajs.com/assets/img/vsc-devtools-quokka-profile.gif"/></p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Recent Files</h4>
+
+          <p>Quokka now provides a list of all recently launched Quokka files (both physical and scratch files) which
+            may be viewed by using the <span class='code-text font-bold highlighted-text'>View Recent Files</span>
+            command. This view displays the contents of the files
+            (search with Ctrl/Cmd + F), the date the file was last run, and provides a number of actions. Read more in
+            <a href="https://quokkajs.com/docs/index.html?editor=vsc#recent">our docs</a>.
+          </p>
+
+          <p class="whatsnew-image" style="height: 530px;"><img class="lazy animated" data-src="https://quokkajs.com/assets/img/vsc-recent-files.gif"/></p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Auto Log <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></h4>
+
+          <p>Quokka now allows users to change the behavior of Quokka to use Show Value to automatically
+            show the runtime value for every line of code. This behavior can be changed after starting Quokka using
+            the Toggle Auto Log command. By default, this behavior is disabled but the default may be changed using
+            the <a href="https://quokkajs.com/configuration.html#auto-log">autoLog configuration setting</a>.</p>
+
+          <p class="whatsnew-image" style="height: 301px;"><img class="lazy animated" data-src="https://quokkajs.com/assets/img/vsc-auto-log.gif"/></p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Sticky Values <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></h4>
+
+          <p>Live Values are now <span class='code-text font-bold highlighted-text'>sticky</span> which means that they
+            survive your file changes
+            while being updated as you type. Values may also be hidden in by pressing <span
+              class='code-text font-bold highlighted-text'>Escape</span> to clear a value or <span
+              class='code-text font-bold highlighted-text'>Escape Escape</span> to clear all values in a file.</p>
+          <p class="whatsnew-image" style="height: 252px;"><img class="lazy animated" data-src="https://quokkajs.com/assets/img/vsc-sticky-values.gif"/></p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Improved Show/Copy/Debug Value Selection</h4>
+
+          <p>We significantly improved Show Value detection when using <span
+              class='code-text font-bold highlighted-text'>Show Value</span> and <span
+              class='code-text font-bold highlighted-text'>Copy Value</span>.
+            This update enables fuzzy token selection instead of previously having to select an exact token to output.
+            In
+            addition to
+            being able to show values for additional syntax constructs, the feature also now has better support for code
+            transpiled with TypeScript and Babel.</p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Report Quokka Config Errors</h4>
+
+          <p>Previously Quokka would ignore any errors in your global <span
+              class='code-text font-bold highlighted-text'>config.json</span> or project-level <span
+              class='code-text font-bold highlighted-text'>.quokka</span> JSON file
+            and attempt to execute your Quokka file with default settings. Quokka will now halt execution and report
+            the error if it cannot correctly process/merge your settings files.
+          </p>
+        </div>
+
+        <div class='feature' data-whats-new-version='1' data-build-date='2021-1-1'>
+          <h4>Log Limit Setting</h4>
+
+          <p>Previously Quokka would log an infinite number of values for repeated code (e.g. within a loop).
+            For a large number of iteration, this could lead to slow Quokka execution and out of memory exceptions.
+            Quokka now limits the default number of values output for repeated code to <span
+              class='code-text font-bold highlighted-text'>100</span>; this can be changed
+            with a <a href="https://quokkajs.com/docs/configuration.html#logging-limits">Quokka setting</a>.
+          </p>
+        </div>
+
+        <p class='text-center pt-2'>
+          <a class='license-action button mb-4' href="https://quokkajs.com/whatsnew/?referrer=qsp">Read More</a>
+        <p>
+
+        <h2 id="license">License<div class='codicon codicon-warning license-warning'></div>
+          <div class='codicon codicon-error license-error'></div>
+        </h2>
+
+        <div class='activating'>
+          <p>Your license activation must be confirmed for your email address (<b class='registered-to'></b>). Please
+            confirm your online
+            activation request by following the instructions in the email we sent you.</p>
+
+          <p>If you have closed your editor since providing your email address, you will need to start Quokka for your
+            license to be updated.</p>
+
+          <p>If you have not received an email from us, please check your junk/spam folders for an email from:
+            <b>hello@wallabyjs.com</b>.
+          </p>
+          <p class='text-center pt-2'>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Change
+              License</button>
+          </p>
+        </div>
+
+        <div class='activated'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. You are entitled
+            to
+            use the latest
+            version of Quokka and all updates and upgrades until <b class='expiry-date'></b>.</p>
+          <p class='not-bundle-product'>If you would like purchase <a href="https://wallabyjs.com/">Wallaby.js</a>, you
+            may <b>upgrade</b> your existing
+            license to <b>Wallaby.js + Quokka.js</b> which is cheaper than purchasing both products separately.</p>
+          <p class='text-center pt-2'>
+            <a class='not-bundle-product upgrade-url button license-action mx-auto mr-md-4 mb-4' href="">Upgrade
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Change
+              License</button>
+          </p>
+        </div>
+
+        <div class='community'>
+          <p>You are currently using <b>Quokka 'Community' edition</b>. You may use the latest version of <b>Quokka
+              'Community' edition</b> on all of your projects.</p>
+          <p>If you would like to use <b>Quokka 'PRO'</b> features, you may <b>request a trial</b> or else <b>purchase a
+              license</b>.</p>
+          <div class='text-center pt-2'>
+            <button
+              class='request-trial-action button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'>Request
+              Trial License</button>
+
+            <a class='purchase-url button license-action mx-auto mr-lg-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Quokka 'PRO'</a>
+
+            <div class='d-block d-lg-none w-100'></div>
+
+            <button
+              class='activate-license button license-action mx-auto mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </div>
+        </div>
+
+        <div class='expiring'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. Your license
+            upgrade period expires in
+            <b><span class='days-until-expiry'></span></b>, on <b class='expiry-date'></b>. If you would like continue
+            to use the
+            latest version of Quokka and receive updates and upgrades for another year, you may <b>renew your
+              license</b>.
+          </p>
+          <p class='text-center pt-2'>
+            <a class='renew-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Renew
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='expiredWrongVersion'>
+          <p><b>You are not licensed</b> to use <b>Quokka 'PRO'</b> features for this version of Quokka as your 12 months
+            of free Quokka updates have expired. This is likely a result of VS Code automatically updating your Quokka extension.</p>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b> and may be used
+            with extension versions available on or before <b class='expiry-date'></b>.</p>
+          <p>To continue to use <b>Quokka 'PRO'</b> features, you may <b>renew your license</b> or <b>install a previous
+              version</b> of the VS Code Quokka extension.
+            Alternatively, you may switch to <b>use Quokka 'Community' edition</b>.
+          </p>
+          <div class='text-center pt-2'>
+            <a class='renew-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Renew
+              License</a>
+            <button
+              class='activate-license button license-action mx-auto mr-lg-4 mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+
+            <div class='d-block d-lg-none w-100'></div>
+
+            <a class='previous-version-url button license-action mx-auto mr-md-4 mr-lg-0 mr-xl-4 mb-4 d-block d-md-inline-block'
+              href="">Get Previous Version</a>
+
+            <div class='d-none d-lg-block d-xl-none w-100'></div>
+
+            <button class='use-community-edition button license-action mx-auto mb-4 d-block d-md-inline-block'>Use
+              'Community' Edition</button>
+          </div>
+        </div>
+        <div class='expired'>
+          <p>Your <b class='product-type'></b> license is registered to <b class='registered-to'></b>. Your license
+            upgrade period has
+            expired and <b>you are no longer eligible for updates and upgrades</b>. If you would like to use the latest
+            version of Quokka and receive updates
+            and upgrades for another year, you may <b>renew your license</b>.</p>
+          <p class='align-middle'>
+          <div id='suppressExpirationNotifications' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-1'></div>
+            <div class='text'>Suppress Expired License Reminders</div>
+          </div>
+          </p>
+          <p class='text-center pt-2'>
+            <a class='renew-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block' href="">Renew
+              License</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='demo-license'>
+          <p>You are currently using <b>Quokka 'PRO'</b> with a limited-time demonstration license that will
+            <b>periodically
+              prompt</b> you to restart VS Code to continue use.</p>
+          <p>If you would like to try Quokka without seeing a warning message and without having to periodically
+            restart VS Code, please
+            <b>request a Quokka 'PRO' trial license</b>. If you have already purchased a license, <b>please activate
+              it</b>. If you do not have a license, you may <b>purchase
+              a license</b> using our website.
+          </p>
+          <div class='request-trial-demo'>
+            <div class='request-trial-section'>
+              <p class='header'>Request Quokka.js 'PRO' Trial License</p>
+              <div class='d-flex mt-3 mb-2'>
+                <input class='request-trial-email flex-grow-1' type='text' placeholder='Email Address'>
+                <button class='trial-submit button ml-3'>Submit</button>
+                <div class='trial-spinner ml-3 spinner-container'>
+                  <div class='spinner-border' role="status"><span class="sr-only">Loading...</span></div>
+                </div>
+              </div>
+              <div class='trial-validation-error smaller-text error mt-3 mb-2'>Invalid email address.</div>
+              <div class='trial-error smaller-text error mt-3 mb-2'>Something went wrong processing your request.
+                Please <a class='error' href="mailto:hello@wallabyjs.com?subject=Quokka.js%20VS%20Code">send us an
+                  email</a> instead.</div>
+              <div class='trial-success smaller-text mt-3 mb-2'>Your request has been processed. Please check your
+                email (including junk/spam folders).</div>
+            </div>
+            <div class='text-center pt-3'>
+              <button
+                class='activate-license button license-action mx-auto mr-lg-4 mb-4 d-block d-md-inline-block'>Activate
+                License</button>
+
+              <div class='d-block d-lg-none w-100'></div>
+
+              <a class='purchase-url button license-action mx-auto mr-lg-4 mb-4 d-block d-md-inline-block'
+                href="">Purchase
+                Quokka 'PRO'</a>
+
+              <div class='d-block d-lg-none w-100'></div>
+
+              <button class='use-community-edition button license-action mx-auto mb-4 d-block d-md-inline-block'>Use
+                'Community' edition</button>
+            </div>
+          </div>
+        </div>
+        <div class='trial-license'>
+          <p>You are currently using a fully-functional limited-time trial version of <b>Quokka 'PRO'</b>. Your trial
+            period
+            finishes in <b><span class='days-until-expiry'></span></b>, on <b class='expiry-date'></b>. If you would
+            like continue to use
+            Quokka 'PRO' after your trial is over, you may <b>purchase a license</b>.</p>
+          <p class='text-center pt-2'>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Quokka 'PRO'</a>
+            <button class='activate-license button license-action mx-auto mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+          </p>
+        </div>
+        <div class='trial-demo-over'>
+          <p>Your <b>Quokka 'PRO'</b> trial period has ended. If you would like to continue to use Quokka, please
+            <b>purchase a
+              license</b> or switch to <b>use Quokka 'Community' edition</b>. If you are still evaluating
+            Quokka and need an extended trial license, please <a
+              href="mailto:hello@wallabyjs.com?subject=Quokka.js%20VS%20Code">email us</a>.</p>
+          <div class='text-center pt-2'>
+            <a class='purchase-url button license-action mx-auto mr-md-4 mb-4 d-block d-md-inline-block'
+              href="">Purchase
+              Quokka 'PRO'</a>
+            <button
+              class='activate-license button license-action mx-auto mr-lg-4 mb-4 d-block d-md-inline-block'>Activate
+              License</button>
+
+            <div class='d-block d-lg-none w-100'></div>
+
+            <button class='use-community-edition button license-action mx-auto mb-4 d-block d-md-inline-block'>Use
+              'Community' edition</button>
+          </div>
+        </div>
+        <div class='request-trial'>
+          <p class='header'>Request Quokka.js 'PRO' Trial License</p>
+          <div class='d-flex mt-3 mb-2'>
+            <input class='request-trial-email flex-grow-1' type='text' placeholder='Email Address'>
+            <button class='trial-submit button ml-3'>Submit</button>
+            <button class='trial-cancel button ml-3'>Cancel</button>
+            <div class='trial-spinner ml-3 spinner-container'>
+              <div class='spinner-border' role="status"><span class="sr-only">Loading...</span></div>
+            </div>
+          </div>
+          <div class='trial-validation-error smaller-text error mt-3 mb-2'>Invalid email address.</div>
+          <div class='trial-error smaller-text error mt-3 mb-2'>Something went wrong processing your request.
+            Please <a class='error' href="mailto:hello@wallabyjs.com?subject=Quokka.js%20VS%20Code">send us an email</a>
+            instead.</div>
+          <div class='trial-success smaller-text mt-3 mb-2'>Your request has been processed. Please check your
+            email (including junk/spam folders).</div>
+        </div>
+
+        <div class='activate-license-details'>
+          <p>Your current <b class='product-type'></b> license is registered to <b class='registered-to'></b> with
+            updates
+            included until <b class='expiry-date'></b>.</p>
+        </div>
+        <div class='activate'>
+          <p class='header'>Activate License</p>
+          <p class='mt-3 description'>If you purchased a <b>personal license</b> or your company has assigned you a
+            license via their <a href="https://account.wallabyjs.com/?referrer=qsp">Wallaby Account</a>, then you may
+            activate
+            Quokka using either your email address OR your license key. If you activate using an email address, you will
+            be sent an email to confirm your activation.</p>
+          <div class='mt-3'>
+            <div class='grow-wrap w-100'>
+              <textarea id='activation-key' placeholder='Email Address OR License Key'></textarea>
+            </div>
+          </div>
+          <div id='activate-server-error' class='smaller-text error mt-3 mb-2'></div>
+          <div id='activate-success' class='smaller-text mt-3 mb-2'></div>
+          <div class='d-flex mt-3 mb-2'>
+            <div id='activate-validation-error' class='smaller-text error'></div>
+            <span class='flex-grow-1'>&nbsp;</span>
+            <button class='button ml-3' id='activation-submit'>Submit</button>
+            <button id='activation-cancel' class='button ml-3'>Cancel</button>
+            <div id='activation-spinner' class='spinner-container ml-3'>
+              <div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="settings">Settings</h2>
+        <h3>Editor Settings</h3>
+        <div class='setting-item'>
+          <div id='startViewStatusBar' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Display Start View Status Bar Indicator</div>
+          </div>
+          <p class='description'>Adds status bar text <b>Quokka</b> to the left hand side of the VS Code status bar to
+            quickly access this screen.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='compactMessageOutput' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Compact Message Output</div>
+          </div>
+          <p class='description'>Minimizes the number of new line characters used to format Quokka's output console
+            messages.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='showOutputOnStart' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Show Output Window when Quokka starts</div>
+          </div>
+          <p class='description'>Shows the Quokka Output Window when Quokka is started (recommended).</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='automaticRestart' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Automatically Restart</div>
+          </div>
+          <p class='description'>Automatically restart Quokka on a file if Quokka was still running when the file or
+            editor was closed.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div class='text-setting'>
+            <div class='text'>Automatic Start Regular Expression</div>
+          </div>
+          <p class='description'>Automatically start Quokka when a file is opened when the file path matches the regular
+            expression.</p>
+          <input id='automaticStartRegex' class='mt-2 w-100' type='text'
+            placeholder='For example: \.(ts|js|jsx|tsx)$' />
+        </div>
+
+        <div class='more-settings'>
+          <p class='text-center pt-2'>
+            <button id='otherSettings' class='license-action button mb-4'>More Editor Settings</button>
+          <p>
+        </div>
+
+        <h3>Global Quokka Config</h3>
+        <div class='setting-item'>
+          <div id='autoLog' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Auto Log <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></div>
+          </div>
+          <p class='description'>Automatically shows the runtime value for every line of code. This behavior can be changed after starting Quokka using the Toggle Auto Log command.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='showValueOnSelection' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Show Value on Selection <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></div>
+          </div>
+          <p class='description'>When using Quokka 'PRO', shows the runtime value of an expression when an expression is selected in your editor.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div id='showSingleInlineValue' class='checkbox-setting invert'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Show All Selected Values <a href="https://quokkajs.com/pro/?referrer=qsp" class="pro-edition align-middle"
+              title="Quokka.js Professional Edition Feature">PRO</a></div>
+          </div>
+          <p class='description'>When using Quokka 'PRO', shows all selected expressions instead of clearing previous values when a new expression is selected.</p>
+        </div>
+
+        <div class='setting-item'>
+          <div class='text-setting'>
+            <div class='text'>Running delay</div>
+          </div>
+          <p class='description'>The number of milliseconds to wait after your last code change before Quokka executes your code.</p>
+          <input id='delay' class='mt-2 w-100' type='text' />
+        </div>
+
+        <div class='setting-item'>
+          <div class='text-setting'>
+            <div class='text'>Logging Limits</div>
+          </div>
+          <p class='description'>Limits how many runtime values are logged for a specific piece of code (e.g. selected variable, or specific use of console.log).</p>
+          <input id='logLimit' class='mt-2 w-100' type='text' />
+        </div>
+
+        <div class='setting-item'>
+          <div id='recycle' class='checkbox-setting'>
+            <div class='custom-checkbox codicon codicon-check mr-2'></div>
+            <div class='text'>Recycle Node.js Process on Every Change</div>
+          </div>
+          <p class='description'>Recycles the Quokka Node.js process between every Quokka execution (will slow down Quokka execution); may be
+            required if your Quokka files have global state that needs to be reset.</p>
+        </div>
+
+        <div class='more-settings'>
+          <div class='text-center pt-2'>
+            <button id='configJson' class='license-action button mb-4'>Open Settings JSON</button>
+            <div class='w-100'></div>
+
+            <a class='license-action button mb-4' href="https://quokkajs.com/docs/configuration.html?referrer=qsp">Configuration Docs</a>
+          </div>
+        </div>
+
+        <h2 id="resources">Resources</h2>
+        <ul>
+          <li><a href="https://quokkajs.com/?referrer=qsp">Website</a></li>
+          <li><a href="https://quokkajs.com/docs/?referrer=qsp">Documentation</a></li>
+          <li><a href="https://github.com/wallabyjs/public/blob/master/CHANGELOG.md">Changelog</a></li>
+          <li><a href="https://github.com/wallabyjs/quokka/blob/master/EULA.md">End User License Agreement</a></li>
+        </ul>
+
+        <h2 id="contact" class='contact-details'>Contact</h2>
+        <p class='contact-details'>
+        <ul class='contact contact-details'>
+          <li>
+            <a class='contact' href="mailto:hello@wallabyjs.com?subject=Quokka.js%20VS%20Code">
+              <span class='icon'>
+                <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Email</span>
+            </a>
+          </li>
+          <li>
+            <a class='issue' href="https://github.com/wallabyjs/quokka/issues">
+              <span class='icon'>
+                <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Issues</span>
+            </a>
+          </li>
+          <li>
+            <a class='twitter' href="https://twitter.com/wallabyjs">
+              <span class='icon'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                  <path class="cls-2"
+                    d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class='discord' href="https://wallabyjs.com/chat/?referrer=qsp">
+              <span class='icon'>
+                <svg viewBox="30 20 220 210" version="1.1" aria-hidden="true">
+                  <path class="st0"
+                    d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z">
+                  </path>
+                  <path class="st0"
+                    d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z">
+                  </path>
+                </svg>
+              </span>
+              <span class='text'>Discord</span>
+            </a>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class='menu'>
+        <div class='menu-items'>
+          <a class='menu-item contact' href="mailto:hello@wallabyjs.com?subject=Quokka.js%20VS%20Code">
+            <span class='menu-item-icon'>
+              <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Email</span>
+          </a>
+          <a class='menu-item issue' href="https://github.com/wallabyjs/quokka/issues">
+            <span class='menu-item-icon'>
+              <svg viewBox="0 0 14 16" version="1.1" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Issues</span>
+          </a>
+          <a class='menu-item twitter' href="https://twitter.com/wallabyjs">
+            <span class='menu-item-icon'>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path class="cls-2"
+                  d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Twitter</span>
+          </a>
+          <a class='menu-item discord' href="https://wallabyjs.com/chat/?referrer=qsp">
+            <span class='menu-item-icon'>
+              <svg viewBox="30 20 220 210" version="1.1" aria-hidden="true">
+                <path class="st0"
+                  d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z">
+                </path>
+                <path class="st0"
+                  d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z">
+                </path>
+              </svg>
+            </span>
+            <span class='menu-item-text'>Discord</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="${root}/media/jquery-3.5.1.slim.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/jquery.lazy.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/popper.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/bootstrap.min.js" nonce="${nonce}"></script>
+  <script src="${root}/media/gifffer.js" nonce="${nonce}"></script>
+  <script src="${root}/media/main.js" nonce="${nonce}"></script>
+</body>
+
+</html>

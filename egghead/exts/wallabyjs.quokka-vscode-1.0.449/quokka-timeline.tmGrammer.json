@@ -1,0 +1,34 @@
+{
+  "scopeName": "source.quokka-timeline",
+  "patterns": [
+    {
+      "include": "#javascript_file_fragment"
+    }
+  ],
+  "repository": {
+    "javascript_file_fragment": {
+      "begin": "\u200b",
+      "end": "\u200b",
+      "patterns": [
+        {
+          "begin": ".*",
+          "while": "(^|\\G)(?!\\s*(\u200b))",
+          "patterns": [
+            {
+              "include": "source.ts"
+            },
+            {
+              "include": "source.js"
+            },
+            {
+              "include": "source.jsx"
+            },
+            {
+              "include": "source.tsx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

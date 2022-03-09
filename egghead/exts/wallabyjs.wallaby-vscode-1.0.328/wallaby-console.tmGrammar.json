@@ -1,0 +1,16 @@
+{
+  "scopeName": "wallaby.console",
+  "name": "wallaby-console",
+  "patterns": [
+    {
+      "comment": "info",
+      "match": "\u200b[^\u200b]+\u200b",
+      "name": "constant.numeric.js"
+    },
+    {
+      "comment": "error",
+      "match": "\u200b{2}[^\u200b]+\u200b{2}",
+      "name": "invalid"
+    }
+  ]
+}

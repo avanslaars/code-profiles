@@ -1,0 +1,47 @@
+[2022-03-09 07:51:18.281] [sharedprocess] [info] Deleted from disk alefragnani.bookmarks /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-9.0.3
+[2022-03-09 07:51:18.334] [sharedprocess] [info] Starting worker process with pid 2033 (type: fileWatcher, window: 1).
+[2022-03-09 07:51:18.488] [sharedprocess] [info] Deleted from disk coenraads.bracket-pair-colorizer /Users/avanslaars/code_profiles/egghead/exts/coenraads.bracket-pair-colorizer-1.0.59
+[2022-03-09 07:51:18.560] [sharedprocess] [info] Deleted from disk wallabyjs.quokka-vscode /Users/avanslaars/code_profiles/egghead/exts/wallabyjs.quokka-vscode-1.0.142
+[2022-03-09 07:51:18.584] [sharedprocess] [info] Deleted from disk wallabyjs.wallaby-vscode /Users/avanslaars/code_profiles/egghead/exts/wallabyjs.wallaby-vscode-1.0.92
+[2022-03-09 07:51:20.310] [sharedprocess] [info] Getting Manifest... alefragnani.bookmarks
+[2022-03-09 07:51:20.311] [sharedprocess] [info] Getting Manifest... coenraads.bracket-pair-colorizer
+[2022-03-09 07:51:20.312] [sharedprocess] [info] Getting Manifest... esbenp.prettier-vscode
+[2022-03-09 07:51:20.312] [sharedprocess] [info] Getting Manifest... sdras.night-owl
+[2022-03-09 07:51:20.312] [sharedprocess] [info] Getting Manifest... wallabyjs.quokka-vscode
+[2022-03-09 07:51:20.313] [sharedprocess] [info] Getting Manifest... wallabyjs.wallaby-vscode
+[2022-03-09 07:51:20.568] [sharedprocess] [info] Installing extension: alefragnani.bookmarks
+[2022-03-09 07:51:20.578] [sharedprocess] [info] Installing extension: coenraads.bracket-pair-colorizer
+[2022-03-09 07:51:20.578] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2022-03-09 07:51:20.626] [sharedprocess] [info] Installing extension: wallabyjs.quokka-vscode
+[2022-03-09 07:51:20.638] [sharedprocess] [info] Installing extension: sdras.night-owl
+[2022-03-09 07:51:20.646] [sharedprocess] [info] Installing extension: wallabyjs.wallaby-vscode
+[2022-03-09 07:51:21.579] [sharedprocess] [info] Downloaded extension: coenraads.bracket-pair-colorizer /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/coenraads.bracket-pair-colorizer-1.0.62
+[2022-03-09 07:51:21.746] [sharedprocess] [info] Downloaded extension: sdras.night-owl /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/sdras.night-owl-2.0.1
+[2022-03-09 07:51:21.791] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.bd6cbba9-ee32-4047-b712-52173e12cb7a: sdras.night-owl
+[2022-03-09 07:51:21.817] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/sdras.night-owl-2.0.1
+[2022-03-09 07:51:21.817] [sharedprocess] [info] Extracting completed. sdras.night-owl
+[2022-03-09 07:51:21.839] [sharedprocess] [info] Extension installed successfully: sdras.night-owl
+[2022-03-09 07:51:21.865] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.97fe032f-dcc3-4888-9e9c-1066bbaa5ef5: coenraads.bracket-pair-colorizer
+[2022-03-09 07:51:21.886] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/coenraads.bracket-pair-colorizer-1.0.62
+[2022-03-09 07:51:21.887] [sharedprocess] [info] Extracting completed. coenraads.bracket-pair-colorizer
+[2022-03-09 07:51:21.907] [sharedprocess] [info] Extension installed successfully: coenraads.bracket-pair-colorizer
+[2022-03-09 07:51:22.314] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/esbenp.prettier-vscode-9.3.0
+[2022-03-09 07:51:22.488] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.35f2bc52-ec9b-4e63-af89-a03446428d15: esbenp.prettier-vscode
+[2022-03-09 07:51:22.513] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/esbenp.prettier-vscode-9.3.0
+[2022-03-09 07:51:22.514] [sharedprocess] [info] Extracting completed. esbenp.prettier-vscode
+[2022-03-09 07:51:22.534] [sharedprocess] [info] Extension installed successfully: esbenp.prettier-vscode
+[2022-03-09 07:51:22.758] [sharedprocess] [info] Downloaded extension: alefragnani.bookmarks /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/alefragnani.bookmarks-13.2.4
+[2022-03-09 07:51:22.811] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.157e4196-ab3a-4c79-9e2a-b7b0dde3ca40: alefragnani.bookmarks
+[2022-03-09 07:51:22.855] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/alefragnani.bookmarks-13.2.4
+[2022-03-09 07:51:22.856] [sharedprocess] [info] Extracting completed. alefragnani.bookmarks
+[2022-03-09 07:51:22.876] [sharedprocess] [info] Extension installed successfully: alefragnani.bookmarks
+[2022-03-09 07:51:23.090] [sharedprocess] [info] Downloaded extension: wallabyjs.quokka-vscode /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/wallabyjs.quokka-vscode-1.0.449
+[2022-03-09 07:51:23.605] [sharedprocess] [info] Downloaded extension: wallabyjs.wallaby-vscode /Users/avanslaars/code_profiles/egghead/data/CachedExtensionVSIXs/wallabyjs.wallaby-vscode-1.0.328
+[2022-03-09 07:51:24.196] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.67a2e3bc-3273-494e-9705-bdb0b61d2bab: wallabyjs.wallaby-vscode
+[2022-03-09 07:51:24.228] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/wallabyjs.wallaby-vscode-1.0.328
+[2022-03-09 07:51:24.229] [sharedprocess] [info] Extracting completed. wallabyjs.wallaby-vscode
+[2022-03-09 07:51:24.253] [sharedprocess] [info] Extension installed successfully: wallabyjs.wallaby-vscode
+[2022-03-09 07:51:24.460] [sharedprocess] [info] Extracted extension to /Users/avanslaars/code_profiles/egghead/exts/.562e8020-e19c-4774-92c6-b4af7e8d1596: wallabyjs.quokka-vscode
+[2022-03-09 07:51:24.486] [sharedprocess] [info] Renamed to /Users/avanslaars/code_profiles/egghead/exts/wallabyjs.quokka-vscode-1.0.449
+[2022-03-09 07:51:24.486] [sharedprocess] [info] Extracting completed. wallabyjs.quokka-vscode
+[2022-03-09 07:51:24.509] [sharedprocess] [info] Extension installed successfully: wallabyjs.quokka-vscode

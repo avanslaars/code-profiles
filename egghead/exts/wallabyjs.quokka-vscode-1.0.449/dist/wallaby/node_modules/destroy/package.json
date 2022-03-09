@@ -1,0 +1,46 @@
+{
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com"
+  },
+  "bugs": {
+    "url": "https://github.com/stream-utils/destroy/issues"
+  },
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    }
+  ],
+  "description": "destroy a stream if possible",
+  "devDependencies": {
+    "istanbul": "0.4.2",
+    "mocha": "2.3.4"
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/stream-utils/destroy#readme",
+  "keywords": [
+    "stream",
+    "streams",
+    "destroy",
+    "cleanup",
+    "leak",
+    "fd"
+  ],
+  "license": "MIT",
+  "name": "destroy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stream-utils/destroy.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "version": "1.0.4"
+}

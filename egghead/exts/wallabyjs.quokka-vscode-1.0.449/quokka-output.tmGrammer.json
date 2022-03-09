@@ -1,0 +1,63 @@
+{
+  "scopeName": "quokka.output",
+  "name": "quokka-output",
+  "patterns": [
+    {
+      "comment": "empty",
+      "match": "\u200b{5}[^\u200b]+\u200b{5}",
+      "name": "entity.name"
+    },
+    {
+      "comment": "header",
+      "match": "\u200b{4}[^\u200b]+\u200b{4}",
+      "name": "comment"
+    },
+    {
+      "comment": "context",
+      "match": "\u200b{3}[^\u200b]+\u200b{3}",
+      "name": "entity.name.function"
+    },
+    {
+      "comment": "string",
+      "match": ".*\u2008",
+      "name": "constant.numeric.js"
+    },
+    {
+      "comment": "error",
+      "match": ".*\u2007",
+      "name": "invalid"
+    },
+    {
+      "comment": "link",
+      "match": "\u200b{1}[^\u200b]+\u200b{1}",
+      "name": "storage.type"
+    },
+    {
+      "comment": "diff",
+      "begin": "\u200b{6}",
+      "end": "\u200b{6}",
+      "name": "entity.name",
+      "patterns": [
+        {
+          "comment": "deletion",
+          "match": "\u200d{1}[^\u200d]+\u200d{1}",
+          "name": "markup.deleted markup.underline"
+        },
+        {
+          "comment": "insertion",
+          "match": "\u2060{1}[^\u2060]+\u2060{1}",
+          "name": "markup.inserted markup.underline"
+        }
+      ]
+    },
+    {
+      "comment": "code",
+      "match": "",
+      "patterns": [
+        {
+          "include": "source.tsx"
+        }
+      ]
+    }
+  ]
+}

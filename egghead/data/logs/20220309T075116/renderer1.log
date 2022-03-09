@@ -1,0 +1,33 @@
+[2022-03-09 07:51:22.857] [renderer1] [error] [Extension Host] Extension `CoenraadS.bracket-pair-colorizer` is already registered
+[2022-03-09 07:51:22.949] [renderer1] [error] [Extension Host] (node:2027) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `Electron --trace-deprecation ...` to show where the warning was created)
+[2022-03-09 07:51:44.976] [renderer1] [error] Cannot read property 'length' of undefined: TypeError: Cannot read property 'length' of undefined
+    at S.next (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:68:71662)
+    at S.reset (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:68:71548)
+    at d._delete (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:68:76997)
+    at d._delete (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:68:77386)
+    at delete (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:68:76907)
+    at vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:600:41793
+    at f.invoke (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:67:145)
+    at c.fire (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:67:1856)
+    at B.triggerConfigurationChange (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:2351:42531)
+    at B.onLocalUserConfigurationChanged (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:2351:35734)
+    at B.reloadLocalUserConfiguration (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:2351:33016)
+    at async Promise.all (index 0)
+    at async Object.q [as settled] (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:71:22547)
+    at async B.updateValue (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:2351:27237)
+    at async V.setColorTheme (vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:2354:20750)
+[2022-03-09 07:51:58.478] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:51:58.497] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:35.449] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:35.482] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:47.840] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:47.877] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:53.897] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:52:53.933] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:26.738] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:26.777] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:27.463] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:27.504] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:28.171] [renderer1] [info] Setting search error: XHR failed
+[2022-03-09 07:53:28.193] [renderer1] [info] Setting search error: XHR failed
